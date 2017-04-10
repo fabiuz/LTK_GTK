@@ -1,4 +1,4 @@
-* GTK-LTK
+`GTK-LTK`
 ** Gerador aleatório de jogos lotéricos
 
 **** Autor: Fábio Moura de Oliveira
