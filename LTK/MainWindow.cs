@@ -6,9 +6,6 @@ using System.Diagnostics;
 using System.Text;
 using System.Linq;
 
-
-
-
 public partial class MainWindow : Gtk.Window
 {
 	///private JogoLoterico[] lista_de_jogos;
@@ -137,6 +134,8 @@ public partial class MainWindow : Gtk.Window
 			int qtBolasSorteadas = 1;
 			bolas_Sorteadas [indiceJogo, indiceNaoSorteado [indiceAnterior]] = true;
 
+			System.Diagnostics.Debug.Print("Número Inicial: " + indiceAnterior + "\r\n");
+
 			while (qtBolasSorteadas != jogoAposta) {
 				if (distanciadores.Count == 0) {
 					distanciadores.AddRange (new int[]{ 1, 2, 3, 4, 5 });
@@ -144,11 +143,21 @@ public partial class MainWindow : Gtk.Window
 
 				// Sortea o índice, em seguida, pega o valor que está armazenado neste índice
 				// e adiciona este índice ao valor do índice anterior.
-				int indiceSorteado = geradorAleatorio.Next (0, distanciadores.Count);
-				indiceAnterior += distanciadores [indiceSorteado];
-				distanciadores.RemoveAt (indiceSorteado);
+				//int indiceSorteado = geradorAleatorio.Next (0, distanciadores.Count);
+				int indiceDistanciador = geradorAleatorio.Next (0, distanciadores.Count);
+
+				string strTexto = "";
+				strTexto += "qtBolasSorteadas: " + qtBolasSorteadas + "\r\n";
+				strTexto += "Indice Distanciador sorteado: " + indiceDistanciador.ToString () + "\r\n";
+				strTexto += "Valor no distanciador sorteado: " + distanciadores[indiceDistanciador] + "\r\n";
+				strTexto += "Indice Anterior: " + indiceAnterior + "\r\n";
+
+				int indiceProximo = distanciadores [indiceDistanciador] + indiceAnterior;
+				distanciadores.RemoveAt (indiceDistanciador);
+
+				strTexto += "Indice Próximo: " + indiceProximo.ToString () + "\r\n";
 			
-				if (indiceAnterior > indiceNaoSorteado.Count-1) {
+				if (indiceProximo > indiceNaoSorteado.Count-1) {
 					indiceAnterior = 0;
 					distanciadores.Clear ();
 					indiceNaoSorteado.Clear ();
@@ -161,10 +170,16 @@ public partial class MainWindow : Gtk.Window
 					// O arranjo 'indiceNaoSorteado' armazena os valores que são 
 					// os índices do arranjo 'bolas_Sorteadas[,]', tais valores
 					// correspondentes a valor do tipo bool com o valor falso.
-					int numeroSorteado = indiceNaoSorteado [indiceAnterior];
+					int numeroSorteado = indiceNaoSorteado [indiceProximo];
+					strTexto += "Numero sorteado: " + numeroSorteado;
+					strTexto += "\r\n=============================================\r\n";
+
 					bolas_Sorteadas [indiceJogo, numeroSorteado] = true;
 					qtBolasSorteadas++;
+					indiceAnterior = indiceProximo;
 				}
+
+				System.Diagnostics.Debug.Print (strTexto);
 			}
 			indiceJogo++;
 		}
@@ -181,13 +196,20 @@ public partial class MainWindow : Gtk.Window
 			string[] bolasSelecionadas = new string[jogoAposta + 2];
 			string[] bolasNaoSelecionadas = new string[jogoAposta + 2];
 			bolasSelecionadas [0] = uA.ToString();
-			bolasSelecionadas [1] = (uA + 1).ToString() + " [" + uA.ToString () + "]";
+			bolasNaoSelecionadas [0] = (uA + 1).ToString() + " [" + uA.ToString () + "]";
+			bolasSelecionadas[1] = "LOTOMANIA";
+			bolasNaoSelecionadas[1] = "LOTOMANIA";
+
+			int indiceBolaSelecionada = 2;
+			int indiceBolaNaoSelecionada = 2;
 
 			for (var uB = 0; uB <= 99; uB++) {
 				if (bolas_Sorteadas [uA, uB]) {
-					bolasSelecionadas [uB + 2] = uB.ToString ();
+					bolasSelecionadas [indiceBolaSelecionada] = uB.ToString ();
+					indiceBolaSelecionada++;
 				} else {
-					bolasSelecionadas [uB + 2] = uB.ToString ();
+					bolasNaoSelecionadas [indiceBolaNaoSelecionada] = uB.ToString ();
+					indiceBolaNaoSelecionada++;
 				}
 			}
 
