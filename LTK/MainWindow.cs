@@ -107,17 +107,122 @@ public partial class MainWindow : Gtk.Window
 	/// <param name="jogoAposta">Jogo aposta.</param>
 	/// <param name="jogoQuantidade">Jogo quantidade.</param>
 	private void GerarLotomania(int jogoAposta, int jogoQuantidade){
+		// Vamos criar um arranjo, que guarda todas as bolas.
+		// Não precisamos validar as variáveis pois são foram realizadas.
+		bool[,] bolas_Sorteadas = new bool[jogoQuantidade, 100];
 
-		// Nós iremos armazenar as bolas geradas em um treeview.
-		//jogoAposta = 3;
-		System.Type[] gTipos = new System.Type[jogoAposta + 2];
+		int indiceJogo = 0;
 
-		// As colunas que refere-se à bola.
-		for (var indice = 0; indice < gTipos.Length; indice++) {
-			gTipos [indice] = typeof(string);
+		// Guarda as distâncias possíveis que o sucessor do número
+		// anterior pode se distanciar.
+		List<int> distanciadores = new List<int> ();
+
+		// Inicializa o gerador de números aleatórios, com uma semente.
+		Random geradorAleatorio = new Random((new Random()).Next(1000000));
+
+		while (indiceJogo < jogoQuantidade) {
+			// Sempre zera o distanciador, quando começa um novo jogo.
+			distanciadores.Clear ();
+
+			// Vamos pegar todos os índices do arranjo, não sorteados.
+			List<int> indiceNaoSorteado = new List<int> ();
+			for (var uA = 0; uA <= 99; uA++) {
+				if (bolas_Sorteadas [indiceJogo, uA] == false) {
+					indiceNaoSorteado.Add (uA);
+				}
+			}
+
+			// Pega o primeiro número.
+			int indiceAnterior = geradorAleatorio.Next (0, 5);
+			int qtBolasSorteadas = 1;
+			bolas_Sorteadas [indiceJogo, indiceNaoSorteado [indiceAnterior]] = true;
+
+			while (qtBolasSorteadas != jogoAposta) {
+				if (distanciadores.Count == 0) {
+					distanciadores.AddRange (new int[]{ 1, 2, 3, 4, 5 });
+				}
+
+				// Sortea o índice, em seguida, pega o valor que está armazenado neste índice
+				// e adiciona este índice ao valor do índice anterior.
+				int indiceSorteado = geradorAleatorio.Next (0, distanciadores.Count);
+				indiceAnterior += distanciadores [indiceSorteado];
+				distanciadores.RemoveAt (indiceSorteado);
+			
+				if (indiceAnterior > indiceNaoSorteado.Count-1) {
+					indiceAnterior = 0;
+					distanciadores.Clear ();
+					indiceNaoSorteado.Clear ();
+					for (var uA = 0; uA <= 99; uA++) {
+						if (bolas_Sorteadas [indiceJogo, uA] == false) {
+							indiceNaoSorteado.Add (uA);
+						}
+					}
+				} else {
+					// O arranjo 'indiceNaoSorteado' armazena os valores que são 
+					// os índices do arranjo 'bolas_Sorteadas[,]', tais valores
+					// correspondentes a valor do tipo bool com o valor falso.
+					int numeroSorteado = indiceNaoSorteado [indiceAnterior];
+					bolas_Sorteadas [indiceJogo, numeroSorteado] = true;
+					qtBolasSorteadas++;
+				}
+			}
+			indiceJogo++;
 		}
 
+		// Agora, vamos criar o modelo pra o treeview.
+		System.Type[] gTipos = new System.Type[jogoAposta + 2];
+
+		for (var uA = 0; uA < gTipos.Length; uA++) {
+			gTipos [uA] = typeof(string);
+		}
 		TreeStore treeStore = new TreeStore (gTipos);
+
+		for (var uA = 0; uA < jogoQuantidade; uA += 2) {
+			string[] bolasSelecionadas = new string[jogoAposta + 2];
+			string[] bolasNaoSelecionadas = new string[jogoAposta + 2];
+			bolasSelecionadas [0] = uA.ToString();
+			bolasSelecionadas [1] = (uA + 1).ToString() + " [" + uA.ToString () + "]";
+
+			for (var uB = 0; uB <= 99; uB++) {
+				if (bolas_Sorteadas [uA, uB]) {
+					bolasSelecionadas [uB + 2] = uB.ToString ();
+				} else {
+					bolasSelecionadas [uB + 2] = uB.ToString ();
+				}
+			}
+
+			treeStore.AppendValues (bolasSelecionadas);
+			treeStore.AppendValues (bolasNaoSelecionadas);
+		}
+
+		// Anexar o modelo.
+		tvResultado.Model = treeStore;
+
+		tvResultado.EnableTreeLines = true;
+
+
+		tvResultado.EnableTreeLines = true;
+		tvResultado.Model = treeStore;
+
+		// Vamos apagar a coluna anterior.
+		while (tvResultado.Columns.Length != 0) {
+			tvResultado.RemoveColumn (tvResultado.Columns [0]);
+		}
+
+		// Vamos adicionar as colunas.
+		tvResultado.AppendColumn(new TreeViewColumn("#Concurso", new CellRendererText(), "text", 0));
+		tvResultado.AppendColumn (new TreeViewColumn ("JOGO_TIPO", new CellRendererText (), "text", 1));
+
+		// Vamos adicionar as colunas das bolas.
+		for (var indice = 2; indice < jogoAposta + 2; indice++) {			
+			tvResultado.AppendColumn (new TreeViewColumn ("B" + (indice -1).ToString (), new CellRendererText(), "text", indice));
+		}
+		tvResultado.ColumnsAutosize ();
+
+
+
+		#if false
+
 
 		// Inicializa o gerador de números aleatórios;
 		Random numeroAleatorio = new Random();
@@ -140,7 +245,7 @@ public partial class MainWindow : Gtk.Window
 			int[] bolasSorteadas = new int[jogoAposta];
 
 			// Pega o valor inicial.
-			int numeroAnterior = numeroAleatorio.Next(0, 3);
+			int numeroAnterior = numeroAleatorio.Next(0, 5);
 
 			// Indica a quantidade de bola já sorteada.
 			int indiceBolaSorteada = 0;
@@ -153,7 +258,7 @@ public partial class MainWindow : Gtk.Window
 			while (indiceBolaSorteada < jogoAposta) {
 				// Primeiro, verifica se a lista está vazia, se sim, preenche-a novamente.
 				if (distanciadores.Count == 0) {
-					distanciadores.AddRange (new int[]{ 1, 2, 3 });
+					distanciadores.AddRange (new int[]{ 1, 2, 3, 4, 5 });
 				}
 
 				// Sortea o número da seguinte forma,
@@ -194,6 +299,7 @@ public partial class MainWindow : Gtk.Window
 				indiceBolaSorteada++;
 				bolasSorteadas [indiceBolaSorteada] = numeroAnterior;
 			}
+
 
 			string[] strBolasSorteadas = new string[jogoAposta + 2];
 			string[] strBolasNaoSorteadas = new string[jogoAposta + 2];
@@ -244,6 +350,8 @@ public partial class MainWindow : Gtk.Window
 			tvResultado.AppendColumn (new TreeViewColumn ("B" + (indice -1).ToString (), new CellRendererText(), "text", indice));
 		}
 		tvResultado.ColumnsAutosize ();
+
+	#endif
 
 	}
 }
