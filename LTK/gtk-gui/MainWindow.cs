@@ -4,1894 +4,1919 @@
 public partial class MainWindow
 {
 	private global::Gtk.UIManager UIManager;
-
+	
 	private global::Gtk.Action ArquivoAction;
-
+	
 	private global::Gtk.Action SairAction;
-
+	
 	private global::Gtk.VBox vbox2;
-
+	
 	private global::Gtk.HBox hbox2;
-
+	
 	private global::Gtk.MenuBar menubar1;
-
+	
 	private global::Gtk.HBox hbox3;
-
+	
 	private global::Gtk.VBox vbox7;
-
+	
 	private global::Gtk.Label label1;
-
+	
 	private global::Gtk.ComboBox cmbJogo;
-
+	
 	private global::Gtk.VBox vbox8;
-
+	
 	private global::Gtk.Label label2;
-
+	
 	private global::Gtk.HBox hbox1;
-
+	
 	private global::Gtk.ComboBox cmbJogoAposta;
-
+	
 	private global::Gtk.Label label4;
-
+	
 	private global::Gtk.VBox vbox9;
-
+	
 	private global::Gtk.Label label3;
-
+	
 	private global::Gtk.HBox hbox4;
-
+	
 	private global::Gtk.ComboBox cmbJogoQuantidade;
-
+	
 	private global::Gtk.Label label5;
-
+	
 	private global::Gtk.VBox vbox1;
-
+	
 	private global::Gtk.Button btnGerar;
-
+	
+	private global::Gtk.VBox vbox3;
+	
+	private global::Gtk.Button btnGerar80;
+	
 	private global::Gtk.HBox hbox6;
-
+	
 	private global::Gtk.ScrolledWindow GtkScrolledWindow;
-
+	
 	private global::Gtk.TreeView tvResultado;
-
+	
 	private global::Gtk.HBox hboxSalvar;
-
+	
 	private global::Gtk.Button btnSalvar;
-
+	
 	private global::Gtk.HBox hbxVinteNumeros;
-
+	
 	private global::Gtk.CheckButton chkVinteUltimosNumeros;
-
+	
 	private global::Gtk.Label label6;
-
+	
 	private global::Gtk.HBox hbox5;
-
+	
 	private global::Gtk.Table tbLotomania;
-
+	
 	private global::Gtk.ToggleButton tg;
-
+	
 	private global::Gtk.ToggleButton tg1;
-
+	
 	private global::Gtk.ToggleButton tg10;
-
+	
 	private global::Gtk.ToggleButton tg11;
-
+	
 	private global::Gtk.ToggleButton tg12;
-
+	
 	private global::Gtk.ToggleButton tg13;
-
+	
 	private global::Gtk.ToggleButton tg14;
-
+	
 	private global::Gtk.ToggleButton tg15;
-
+	
 	private global::Gtk.ToggleButton tg16;
-
+	
 	private global::Gtk.ToggleButton tg17;
-
+	
 	private global::Gtk.ToggleButton tg18;
-
+	
 	private global::Gtk.ToggleButton tg19;
-
+	
 	private global::Gtk.ToggleButton tg2;
-
+	
 	private global::Gtk.ToggleButton tg20;
-
+	
 	private global::Gtk.ToggleButton tg21;
-
+	
 	private global::Gtk.ToggleButton tg22;
-
+	
 	private global::Gtk.ToggleButton tg23;
-
+	
 	private global::Gtk.ToggleButton tg24;
-
+	
 	private global::Gtk.ToggleButton tg25;
-
+	
 	private global::Gtk.ToggleButton tg26;
-
+	
 	private global::Gtk.ToggleButton tg27;
-
+	
 	private global::Gtk.ToggleButton tg28;
-
+	
 	private global::Gtk.ToggleButton tg29;
-
+	
 	private global::Gtk.ToggleButton tg3;
-
+	
 	private global::Gtk.ToggleButton tg30;
-
+	
 	private global::Gtk.ToggleButton tg31;
-
+	
 	private global::Gtk.ToggleButton tg32;
-
+	
 	private global::Gtk.ToggleButton tg33;
-
+	
 	private global::Gtk.ToggleButton tg34;
-
+	
 	private global::Gtk.ToggleButton tg35;
-
+	
 	private global::Gtk.ToggleButton tg36;
-
+	
 	private global::Gtk.ToggleButton tg37;
-
+	
 	private global::Gtk.ToggleButton tg38;
-
+	
 	private global::Gtk.ToggleButton tg39;
-
+	
 	private global::Gtk.ToggleButton tg4;
-
+	
 	private global::Gtk.ToggleButton tg40;
-
+	
 	private global::Gtk.ToggleButton tg41;
-
+	
 	private global::Gtk.ToggleButton tg42;
-
+	
 	private global::Gtk.ToggleButton tg43;
-
+	
 	private global::Gtk.ToggleButton tg44;
-
+	
 	private global::Gtk.ToggleButton tg45;
-
+	
 	private global::Gtk.ToggleButton tg46;
-
+	
 	private global::Gtk.ToggleButton tg47;
-
+	
 	private global::Gtk.ToggleButton tg48;
-
+	
 	private global::Gtk.ToggleButton tg49;
-
+	
 	private global::Gtk.ToggleButton tg5;
-
+	
 	private global::Gtk.ToggleButton tg50;
-
+	
 	private global::Gtk.ToggleButton tg51;
-
+	
 	private global::Gtk.ToggleButton tg52;
-
+	
 	private global::Gtk.ToggleButton tg53;
-
+	
 	private global::Gtk.ToggleButton tg54;
-
+	
 	private global::Gtk.ToggleButton tg55;
-
+	
 	private global::Gtk.ToggleButton tg56;
-
+	
 	private global::Gtk.ToggleButton tg57;
-
+	
 	private global::Gtk.ToggleButton tg58;
-
+	
 	private global::Gtk.ToggleButton tg59;
-
+	
 	private global::Gtk.ToggleButton tg6;
-
+	
 	private global::Gtk.ToggleButton tg60;
-
+	
 	private global::Gtk.ToggleButton tg61;
-
+	
 	private global::Gtk.ToggleButton tg62;
-
+	
 	private global::Gtk.ToggleButton tg63;
-
+	
 	private global::Gtk.ToggleButton tg64;
-
+	
 	private global::Gtk.ToggleButton tg65;
-
+	
 	private global::Gtk.ToggleButton tg66;
-
+	
 	private global::Gtk.ToggleButton tg67;
-
+	
 	private global::Gtk.ToggleButton tg68;
-
+	
 	private global::Gtk.ToggleButton tg69;
-
+	
 	private global::Gtk.ToggleButton tg7;
-
+	
 	private global::Gtk.ToggleButton tg70;
-
+	
 	private global::Gtk.ToggleButton tg71;
-
+	
 	private global::Gtk.ToggleButton tg72;
-
+	
 	private global::Gtk.ToggleButton tg73;
-
+	
 	private global::Gtk.ToggleButton tg74;
-
+	
 	private global::Gtk.ToggleButton tg75;
-
+	
 	private global::Gtk.ToggleButton tg76;
-
+	
 	private global::Gtk.ToggleButton tg77;
-
+	
 	private global::Gtk.ToggleButton tg78;
-
+	
 	private global::Gtk.ToggleButton tg79;
-
+	
 	private global::Gtk.ToggleButton tg8;
-
+	
 	private global::Gtk.ToggleButton tg80;
-
+	
 	private global::Gtk.ToggleButton tg81;
-
+	
 	private global::Gtk.ToggleButton tg82;
-
+	
 	private global::Gtk.ToggleButton tg83;
-
+	
 	private global::Gtk.ToggleButton tg84;
-
+	
 	private global::Gtk.ToggleButton tg85;
-
+	
 	private global::Gtk.ToggleButton tg86;
-
+	
 	private global::Gtk.ToggleButton tg87;
-
+	
 	private global::Gtk.ToggleButton tg88;
-
+	
 	private global::Gtk.ToggleButton tg89;
-
+	
 	private global::Gtk.ToggleButton tg9;
-
+	
 	private global::Gtk.ToggleButton tg90;
-
+	
 	private global::Gtk.ToggleButton tg91;
-
+	
 	private global::Gtk.ToggleButton tg92;
-
+	
 	private global::Gtk.ToggleButton tg93;
-
+	
 	private global::Gtk.ToggleButton tg94;
-
+	
 	private global::Gtk.ToggleButton tg95;
-
+	
 	private global::Gtk.ToggleButton tg96;
-
+	
 	private global::Gtk.ToggleButton tg97;
-
+	
 	private global::Gtk.ToggleButton tg98;
-
+	
 	private global::Gtk.ToggleButton tg99;
 
-	protected virtual void Build()
+	protected virtual void Build ()
 	{
-		global::Stetic.Gui.Initialize(this);
+		global::Stetic.Gui.Initialize (this);
 		// Widget MainWindow
-		this.UIManager = new global::Gtk.UIManager();
-		global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup("Default");
-		this.ArquivoAction = new global::Gtk.Action("ArquivoAction", global::Mono.Unix.Catalog.GetString("A_rquivo"), null, null);
-		this.ArquivoAction.ShortLabel = global::Mono.Unix.Catalog.GetString("A_rquivo");
-		w1.Add(this.ArquivoAction, null);
-		this.SairAction = new global::Gtk.Action("SairAction", global::Mono.Unix.Catalog.GetString("Sai_r"), null, null);
-		this.SairAction.ShortLabel = global::Mono.Unix.Catalog.GetString("Sai_r");
-		w1.Add(this.SairAction, null);
-		this.UIManager.InsertActionGroup(w1, 0);
-		this.AddAccelGroup(this.UIManager.AccelGroup);
+		this.UIManager = new global::Gtk.UIManager ();
+		global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
+		this.ArquivoAction = new global::Gtk.Action ("ArquivoAction", global::Mono.Unix.Catalog.GetString ("A_rquivo"), null, null);
+		this.ArquivoAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("A_rquivo");
+		w1.Add (this.ArquivoAction, null);
+		this.SairAction = new global::Gtk.Action ("SairAction", global::Mono.Unix.Catalog.GetString ("Sai_r"), null, null);
+		this.SairAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Sai_r");
+		w1.Add (this.SairAction, null);
+		this.UIManager.InsertActionGroup (w1, 0);
+		this.AddAccelGroup (this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString("Analisador e gerador lotérico ltk");
+		this.Title = global::Mono.Unix.Catalog.GetString ("Analisador e gerador lotérico ltk");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.vbox2 = new global::Gtk.VBox();
+		this.vbox2 = new global::Gtk.VBox ();
 		this.vbox2.Name = "vbox2";
 		this.vbox2.Spacing = 6;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hbox2 = new global::Gtk.HBox();
+		this.hbox2 = new global::Gtk.HBox ();
 		this.hbox2.Name = "hbox2";
 		this.hbox2.Spacing = 6;
 		// Container child hbox2.Gtk.Box+BoxChild
-		this.UIManager.AddUiFromString("<ui><menubar name='menubar1'><menu name='ArquivoAction' action='ArquivoAction'><menuitem name='SairAction' action='SairAction'/></menu></menubar></ui>");
-		this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
+		this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='ArquivoAction' action='ArquivoAction'><menuitem name='SairAction' action='SairAction'/></menu></menubar></ui>");
+		this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget ("/menubar1")));
 		this.menubar1.Name = "menubar1";
-		this.hbox2.Add(this.menubar1);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.menubar1]));
+		this.hbox2.Add (this.menubar1);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.menubar1]));
 		w2.Position = 0;
 		w2.Expand = false;
 		w2.Fill = false;
-		this.vbox2.Add(this.hbox2);
-		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbox2]));
+		this.vbox2.Add (this.hbox2);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox2]));
 		w3.Position = 0;
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hbox3 = new global::Gtk.HBox();
+		this.hbox3 = new global::Gtk.HBox ();
 		this.hbox3.Name = "hbox3";
 		this.hbox3.Spacing = 6;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.vbox7 = new global::Gtk.VBox();
+		this.vbox7 = new global::Gtk.VBox ();
 		this.vbox7.Name = "vbox7";
 		this.vbox7.Spacing = 2;
 		this.vbox7.BorderWidth = ((uint)(9));
 		// Container child vbox7.Gtk.Box+BoxChild
-		this.label1 = new global::Gtk.Label();
+		this.label1 = new global::Gtk.Label ();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Jogo");
-		this.vbox7.Add(this.label1);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.label1]));
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Jogo");
+		this.vbox7.Add (this.label1);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox7 [this.label1]));
 		w4.Position = 0;
 		w4.Expand = false;
 		w4.Fill = false;
 		// Container child vbox7.Gtk.Box+BoxChild
-		this.cmbJogo = global::Gtk.ComboBox.NewText();
+		this.cmbJogo = global::Gtk.ComboBox.NewText ();
 		this.cmbJogo.Name = "cmbJogo";
-		this.vbox7.Add(this.cmbJogo);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.cmbJogo]));
+		this.vbox7.Add (this.cmbJogo);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox7 [this.cmbJogo]));
 		w5.Position = 1;
-		this.hbox3.Add(this.vbox7);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox7]));
+		this.hbox3.Add (this.vbox7);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.vbox7]));
 		w6.Position = 0;
 		w6.Expand = false;
 		w6.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.vbox8 = new global::Gtk.VBox();
+		this.vbox8 = new global::Gtk.VBox ();
 		this.vbox8.Name = "vbox8";
 		this.vbox8.Spacing = 2;
 		this.vbox8.BorderWidth = ((uint)(9));
 		// Container child vbox8.Gtk.Box+BoxChild
-		this.label2 = new global::Gtk.Label();
+		this.label2 = new global::Gtk.Label ();
 		this.label2.Name = "label2";
 		this.label2.Xalign = 0F;
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Jogar apostas com:");
-		this.vbox8.Add(this.label2);
-		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.label2]));
+		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Jogar apostas com:");
+		this.vbox8.Add (this.label2);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox8 [this.label2]));
 		w7.Position = 0;
 		w7.Expand = false;
 		w7.Fill = false;
 		// Container child vbox8.Gtk.Box+BoxChild
-		this.hbox1 = new global::Gtk.HBox();
+		this.hbox1 = new global::Gtk.HBox ();
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.cmbJogoAposta = global::Gtk.ComboBox.NewText();
+		this.cmbJogoAposta = global::Gtk.ComboBox.NewText ();
 		this.cmbJogoAposta.Name = "cmbJogoAposta";
-		this.hbox1.Add(this.cmbJogoAposta);
-		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.cmbJogoAposta]));
+		this.hbox1.Add (this.cmbJogoAposta);
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.cmbJogoAposta]));
 		w8.Position = 0;
 		w8.Expand = false;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.label4 = new global::Gtk.Label();
+		this.label4 = new global::Gtk.Label ();
 		this.label4.Name = "label4";
 		this.label4.Xalign = 0F;
-		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("números");
-		this.hbox1.Add(this.label4);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.label4]));
+		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("números");
+		this.hbox1.Add (this.label4);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.label4]));
 		w9.Position = 1;
 		w9.Expand = false;
-		this.vbox8.Add(this.hbox1);
-		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.hbox1]));
+		this.vbox8.Add (this.hbox1);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox8 [this.hbox1]));
 		w10.Position = 1;
 		w10.Expand = false;
 		w10.Fill = false;
-		this.hbox3.Add(this.vbox8);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox8]));
+		this.hbox3.Add (this.vbox8);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.vbox8]));
 		w11.Position = 1;
 		w11.Expand = false;
 		w11.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.vbox9 = new global::Gtk.VBox();
+		this.vbox9 = new global::Gtk.VBox ();
 		this.vbox9.Name = "vbox9";
 		this.vbox9.Spacing = 2;
 		this.vbox9.BorderWidth = ((uint)(9));
 		// Container child vbox9.Gtk.Box+BoxChild
-		this.label3 = new global::Gtk.Label();
+		this.label3 = new global::Gtk.Label ();
 		this.label3.Name = "label3";
 		this.label3.Xalign = 0F;
-		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString("Quantidade de apostas:");
-		this.vbox9.Add(this.label3);
-		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.label3]));
+		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Quantidade de apostas:");
+		this.vbox9.Add (this.label3);
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox9 [this.label3]));
 		w12.Position = 0;
 		w12.Expand = false;
 		w12.Fill = false;
 		// Container child vbox9.Gtk.Box+BoxChild
-		this.hbox4 = new global::Gtk.HBox();
+		this.hbox4 = new global::Gtk.HBox ();
 		this.hbox4.Name = "hbox4";
 		this.hbox4.Spacing = 6;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.cmbJogoQuantidade = global::Gtk.ComboBox.NewText();
+		this.cmbJogoQuantidade = global::Gtk.ComboBox.NewText ();
 		this.cmbJogoQuantidade.Name = "cmbJogoQuantidade";
-		this.hbox4.Add(this.cmbJogoQuantidade);
-		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.cmbJogoQuantidade]));
+		this.hbox4.Add (this.cmbJogoQuantidade);
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.cmbJogoQuantidade]));
 		w13.Position = 0;
 		// Container child hbox4.Gtk.Box+BoxChild
-		this.label5 = new global::Gtk.Label();
+		this.label5 = new global::Gtk.Label ();
 		this.label5.Name = "label5";
 		this.label5.Xalign = 0F;
-		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("números");
-		this.hbox4.Add(this.label5);
-		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.label5]));
+		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("números");
+		this.hbox4.Add (this.label5);
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.label5]));
 		w14.Position = 1;
-		this.vbox9.Add(this.hbox4);
-		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.hbox4]));
+		this.vbox9.Add (this.hbox4);
+		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox9 [this.hbox4]));
 		w15.Position = 1;
 		w15.Expand = false;
 		w15.Fill = false;
-		this.hbox3.Add(this.vbox9);
-		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox9]));
+		this.hbox3.Add (this.vbox9);
+		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.vbox9]));
 		w16.Position = 2;
 		w16.Expand = false;
 		w16.Fill = false;
 		// Container child hbox3.Gtk.Box+BoxChild
-		this.vbox1 = new global::Gtk.VBox();
+		this.vbox1 = new global::Gtk.VBox ();
 		this.vbox1.Name = "vbox1";
 		this.vbox1.BorderWidth = ((uint)(9));
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.btnGerar = new global::Gtk.Button();
+		this.btnGerar = new global::Gtk.Button ();
 		this.btnGerar.CanFocus = true;
 		this.btnGerar.Name = "btnGerar";
 		this.btnGerar.UseUnderline = true;
-		this.btnGerar.Label = global::Mono.Unix.Catalog.GetString("Gerar jogos aleatórios");
-		this.vbox1.Add(this.btnGerar);
-		global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.btnGerar]));
+		this.btnGerar.Label = global::Mono.Unix.Catalog.GetString ("Gerar jogos aleatórios");
+		this.vbox1.Add (this.btnGerar);
+		global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.btnGerar]));
 		w17.PackType = ((global::Gtk.PackType)(1));
 		w17.Position = 1;
 		w17.Expand = false;
 		w17.Fill = false;
-		this.hbox3.Add(this.vbox1);
-		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.vbox1]));
+		this.hbox3.Add (this.vbox1);
+		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.vbox1]));
 		w18.Position = 3;
 		w18.Expand = false;
 		w18.Fill = false;
-		this.vbox2.Add(this.hbox3);
-		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbox3]));
+		// Container child hbox3.Gtk.Box+BoxChild
+		this.vbox3 = new global::Gtk.VBox ();
+		this.vbox3.Name = "vbox3";
+		this.vbox3.Spacing = 6;
+		this.vbox3.BorderWidth = ((uint)(9));
+		// Container child vbox3.Gtk.Box+BoxChild
+		this.btnGerar80 = new global::Gtk.Button ();
+		this.btnGerar80.CanFocus = true;
+		this.btnGerar80.Name = "btnGerar80";
+		this.btnGerar80.UseUnderline = true;
+		this.btnGerar80.Label = global::Mono.Unix.Catalog.GetString ("Gerar 5 grupos de 10 dos 80");
+		this.vbox3.Add (this.btnGerar80);
+		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.btnGerar80]));
 		w19.Position = 1;
 		w19.Expand = false;
 		w19.Fill = false;
+		this.hbox3.Add (this.vbox3);
+		global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.vbox3]));
+		w20.Position = 4;
+		w20.Expand = false;
+		w20.Fill = false;
+		this.vbox2.Add (this.hbox3);
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox3]));
+		w21.Position = 1;
+		w21.Expand = false;
+		w21.Fill = false;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hbox6 = new global::Gtk.HBox();
+		this.hbox6 = new global::Gtk.HBox ();
 		this.hbox6.Name = "hbox6";
 		this.hbox6.Spacing = 6;
 		// Container child hbox6.Gtk.Box+BoxChild
-		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
+		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
 		this.GtkScrolledWindow.HeightRequest = 15;
 		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 		this.GtkScrolledWindow.WindowPlacement = ((global::Gtk.CornerType)(3));
 		this.GtkScrolledWindow.BorderWidth = ((uint)(5));
 		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.tvResultado = new global::Gtk.TreeView();
+		this.tvResultado = new global::Gtk.TreeView ();
 		this.tvResultado.CanFocus = true;
 		this.tvResultado.Name = "tvResultado";
-		this.GtkScrolledWindow.Add(this.tvResultado);
-		this.hbox6.Add(this.GtkScrolledWindow);
-		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox6[this.GtkScrolledWindow]));
-		w21.Position = 0;
-		this.vbox2.Add(this.hbox6);
-		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbox6]));
-		w22.Position = 2;
+		this.GtkScrolledWindow.Add (this.tvResultado);
+		this.hbox6.Add (this.GtkScrolledWindow);
+		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox6 [this.GtkScrolledWindow]));
+		w23.Position = 0;
+		this.vbox2.Add (this.hbox6);
+		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox6]));
+		w24.Position = 2;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hboxSalvar = new global::Gtk.HBox();
+		this.hboxSalvar = new global::Gtk.HBox ();
 		this.hboxSalvar.Name = "hboxSalvar";
 		this.hboxSalvar.Spacing = 6;
 		// Container child hboxSalvar.Gtk.Box+BoxChild
-		this.btnSalvar = new global::Gtk.Button();
+		this.btnSalvar = new global::Gtk.Button ();
 		this.btnSalvar.CanFocus = true;
 		this.btnSalvar.Name = "btnSalvar";
 		this.btnSalvar.UseUnderline = true;
 		this.btnSalvar.BorderWidth = ((uint)(6));
-		this.btnSalvar.Label = global::Mono.Unix.Catalog.GetString("Salvar em um arquivo...");
-		this.hboxSalvar.Add(this.btnSalvar);
-		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hboxSalvar[this.btnSalvar]));
-		w23.PackType = ((global::Gtk.PackType)(1));
-		w23.Position = 2;
-		w23.Expand = false;
-		w23.Fill = false;
-		this.vbox2.Add(this.hboxSalvar);
-		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hboxSalvar]));
-		w24.Position = 3;
-		w24.Expand = false;
-		w24.Fill = false;
+		this.btnSalvar.Label = global::Mono.Unix.Catalog.GetString ("Salvar em um arquivo...");
+		this.hboxSalvar.Add (this.btnSalvar);
+		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.hboxSalvar [this.btnSalvar]));
+		w25.PackType = ((global::Gtk.PackType)(1));
+		w25.Position = 2;
+		w25.Expand = false;
+		w25.Fill = false;
+		this.vbox2.Add (this.hboxSalvar);
+		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hboxSalvar]));
+		w26.Position = 3;
+		w26.Expand = false;
+		w26.Fill = false;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hbxVinteNumeros = new global::Gtk.HBox();
+		this.hbxVinteNumeros = new global::Gtk.HBox ();
 		this.hbxVinteNumeros.Name = "hbxVinteNumeros";
 		this.hbxVinteNumeros.Spacing = 6;
 		// Container child hbxVinteNumeros.Gtk.Box+BoxChild
-		this.chkVinteUltimosNumeros = new global::Gtk.CheckButton();
+		this.chkVinteUltimosNumeros = new global::Gtk.CheckButton ();
 		this.chkVinteUltimosNumeros.CanFocus = true;
 		this.chkVinteUltimosNumeros.Name = "chkVinteUltimosNumeros";
-		this.chkVinteUltimosNumeros.Label = global::Mono.Unix.Catalog.GetString("Não sortear os 20 números do último concurso.");
+		this.chkVinteUltimosNumeros.Label = global::Mono.Unix.Catalog.GetString ("Não sortear os 20 números do último concurso.");
 		this.chkVinteUltimosNumeros.DrawIndicator = true;
 		this.chkVinteUltimosNumeros.UseUnderline = true;
-		this.hbxVinteNumeros.Add(this.chkVinteUltimosNumeros);
-		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.hbxVinteNumeros[this.chkVinteUltimosNumeros]));
-		w25.Position = 0;
-		w25.Expand = false;
+		this.hbxVinteNumeros.Add (this.chkVinteUltimosNumeros);
+		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.hbxVinteNumeros [this.chkVinteUltimosNumeros]));
+		w27.Position = 0;
+		w27.Expand = false;
 		// Container child hbxVinteNumeros.Gtk.Box+BoxChild
-		this.label6 = new global::Gtk.Label();
+		this.label6 = new global::Gtk.Label ();
 		this.label6.Name = "label6";
 		this.label6.Justify = ((global::Gtk.Justification)(2));
-		this.hbxVinteNumeros.Add(this.label6);
-		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.hbxVinteNumeros[this.label6]));
-		w26.Position = 1;
-		this.vbox2.Add(this.hbxVinteNumeros);
-		global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbxVinteNumeros]));
-		w27.Position = 4;
-		w27.Expand = false;
-		w27.Fill = false;
+		this.hbxVinteNumeros.Add (this.label6);
+		global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbxVinteNumeros [this.label6]));
+		w28.Position = 1;
+		this.vbox2.Add (this.hbxVinteNumeros);
+		global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbxVinteNumeros]));
+		w29.Position = 4;
+		w29.Expand = false;
+		w29.Fill = false;
 		// Container child vbox2.Gtk.Box+BoxChild
-		this.hbox5 = new global::Gtk.HBox();
+		this.hbox5 = new global::Gtk.HBox ();
 		this.hbox5.Name = "hbox5";
 		this.hbox5.Spacing = 6;
 		this.hbox5.BorderWidth = ((uint)(5));
 		// Container child hbox5.Gtk.Box+BoxChild
-		this.tbLotomania = new global::Gtk.Table(((uint)(4)), ((uint)(25)), false);
+		this.tbLotomania = new global::Gtk.Table (((uint)(4)), ((uint)(25)), false);
 		this.tbLotomania.Name = "tbLotomania";
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg = new global::Gtk.ToggleButton();
+		this.tg = new global::Gtk.ToggleButton ();
 		this.tg.CanFocus = true;
 		this.tg.Name = "tg";
 		this.tg.UseUnderline = true;
-		this.tg.Label = global::Mono.Unix.Catalog.GetString("0");
-		this.tbLotomania.Add(this.tg);
-		global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg]));
-		w28.XOptions = ((global::Gtk.AttachOptions)(4));
-		w28.YOptions = ((global::Gtk.AttachOptions)(0));
+		this.tg.Label = global::Mono.Unix.Catalog.GetString ("0");
+		this.tbLotomania.Add (this.tg);
+		global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg]));
+		w30.XOptions = ((global::Gtk.AttachOptions)(4));
+		w30.YOptions = ((global::Gtk.AttachOptions)(0));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg1 = new global::Gtk.ToggleButton();
+		this.tg1 = new global::Gtk.ToggleButton ();
 		this.tg1.CanFocus = true;
 		this.tg1.Name = "tg1";
 		this.tg1.UseUnderline = true;
-		this.tg1.Label = global::Mono.Unix.Catalog.GetString("1");
-		this.tbLotomania.Add(this.tg1);
-		global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg1]));
-		w29.LeftAttach = ((uint)(1));
-		w29.RightAttach = ((uint)(2));
-		w29.XOptions = ((global::Gtk.AttachOptions)(4));
-		w29.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg10 = new global::Gtk.ToggleButton();
-		this.tg10.CanFocus = true;
-		this.tg10.Name = "tg10";
-		this.tg10.UseUnderline = true;
-		this.tg10.Label = global::Mono.Unix.Catalog.GetString("10");
-		this.tbLotomania.Add(this.tg10);
-		global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg10]));
-		w30.LeftAttach = ((uint)(10));
-		w30.RightAttach = ((uint)(11));
-		w30.XOptions = ((global::Gtk.AttachOptions)(4));
-		w30.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg11 = new global::Gtk.ToggleButton();
-		this.tg11.CanFocus = true;
-		this.tg11.Name = "tg11";
-		this.tg11.UseUnderline = true;
-		this.tg11.Label = global::Mono.Unix.Catalog.GetString("11");
-		this.tbLotomania.Add(this.tg11);
-		global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg11]));
-		w31.LeftAttach = ((uint)(11));
-		w31.RightAttach = ((uint)(12));
+		this.tg1.Label = global::Mono.Unix.Catalog.GetString ("1");
+		this.tbLotomania.Add (this.tg1);
+		global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg1]));
+		w31.LeftAttach = ((uint)(1));
+		w31.RightAttach = ((uint)(2));
 		w31.XOptions = ((global::Gtk.AttachOptions)(4));
 		w31.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg12 = new global::Gtk.ToggleButton();
-		this.tg12.CanFocus = true;
-		this.tg12.Name = "tg12";
-		this.tg12.UseUnderline = true;
-		this.tg12.Label = global::Mono.Unix.Catalog.GetString("12");
-		this.tbLotomania.Add(this.tg12);
-		global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg12]));
-		w32.LeftAttach = ((uint)(12));
-		w32.RightAttach = ((uint)(13));
+		this.tg10 = new global::Gtk.ToggleButton ();
+		this.tg10.CanFocus = true;
+		this.tg10.Name = "tg10";
+		this.tg10.UseUnderline = true;
+		this.tg10.Label = global::Mono.Unix.Catalog.GetString ("10");
+		this.tbLotomania.Add (this.tg10);
+		global::Gtk.Table.TableChild w32 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg10]));
+		w32.LeftAttach = ((uint)(10));
+		w32.RightAttach = ((uint)(11));
 		w32.XOptions = ((global::Gtk.AttachOptions)(4));
 		w32.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg13 = new global::Gtk.ToggleButton();
-		this.tg13.CanFocus = true;
-		this.tg13.Name = "tg13";
-		this.tg13.UseUnderline = true;
-		this.tg13.Label = global::Mono.Unix.Catalog.GetString("13");
-		this.tbLotomania.Add(this.tg13);
-		global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg13]));
-		w33.LeftAttach = ((uint)(13));
-		w33.RightAttach = ((uint)(14));
+		this.tg11 = new global::Gtk.ToggleButton ();
+		this.tg11.CanFocus = true;
+		this.tg11.Name = "tg11";
+		this.tg11.UseUnderline = true;
+		this.tg11.Label = global::Mono.Unix.Catalog.GetString ("11");
+		this.tbLotomania.Add (this.tg11);
+		global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg11]));
+		w33.LeftAttach = ((uint)(11));
+		w33.RightAttach = ((uint)(12));
 		w33.XOptions = ((global::Gtk.AttachOptions)(4));
 		w33.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg14 = new global::Gtk.ToggleButton();
-		this.tg14.CanFocus = true;
-		this.tg14.Name = "tg14";
-		this.tg14.UseUnderline = true;
-		this.tg14.Label = global::Mono.Unix.Catalog.GetString("14");
-		this.tbLotomania.Add(this.tg14);
-		global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg14]));
-		w34.LeftAttach = ((uint)(14));
-		w34.RightAttach = ((uint)(15));
+		this.tg12 = new global::Gtk.ToggleButton ();
+		this.tg12.CanFocus = true;
+		this.tg12.Name = "tg12";
+		this.tg12.UseUnderline = true;
+		this.tg12.Label = global::Mono.Unix.Catalog.GetString ("12");
+		this.tbLotomania.Add (this.tg12);
+		global::Gtk.Table.TableChild w34 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg12]));
+		w34.LeftAttach = ((uint)(12));
+		w34.RightAttach = ((uint)(13));
 		w34.XOptions = ((global::Gtk.AttachOptions)(4));
 		w34.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg15 = new global::Gtk.ToggleButton();
-		this.tg15.CanFocus = true;
-		this.tg15.Name = "tg15";
-		this.tg15.UseUnderline = true;
-		this.tg15.Label = global::Mono.Unix.Catalog.GetString("15");
-		this.tbLotomania.Add(this.tg15);
-		global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg15]));
-		w35.LeftAttach = ((uint)(15));
-		w35.RightAttach = ((uint)(16));
+		this.tg13 = new global::Gtk.ToggleButton ();
+		this.tg13.CanFocus = true;
+		this.tg13.Name = "tg13";
+		this.tg13.UseUnderline = true;
+		this.tg13.Label = global::Mono.Unix.Catalog.GetString ("13");
+		this.tbLotomania.Add (this.tg13);
+		global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg13]));
+		w35.LeftAttach = ((uint)(13));
+		w35.RightAttach = ((uint)(14));
 		w35.XOptions = ((global::Gtk.AttachOptions)(4));
 		w35.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg16 = new global::Gtk.ToggleButton();
-		this.tg16.CanFocus = true;
-		this.tg16.Name = "tg16";
-		this.tg16.UseUnderline = true;
-		this.tg16.Label = global::Mono.Unix.Catalog.GetString("16");
-		this.tbLotomania.Add(this.tg16);
-		global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg16]));
-		w36.LeftAttach = ((uint)(16));
-		w36.RightAttach = ((uint)(17));
+		this.tg14 = new global::Gtk.ToggleButton ();
+		this.tg14.CanFocus = true;
+		this.tg14.Name = "tg14";
+		this.tg14.UseUnderline = true;
+		this.tg14.Label = global::Mono.Unix.Catalog.GetString ("14");
+		this.tbLotomania.Add (this.tg14);
+		global::Gtk.Table.TableChild w36 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg14]));
+		w36.LeftAttach = ((uint)(14));
+		w36.RightAttach = ((uint)(15));
 		w36.XOptions = ((global::Gtk.AttachOptions)(4));
 		w36.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg17 = new global::Gtk.ToggleButton();
-		this.tg17.CanFocus = true;
-		this.tg17.Name = "tg17";
-		this.tg17.UseUnderline = true;
-		this.tg17.Label = global::Mono.Unix.Catalog.GetString("17");
-		this.tbLotomania.Add(this.tg17);
-		global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg17]));
-		w37.LeftAttach = ((uint)(17));
-		w37.RightAttach = ((uint)(18));
+		this.tg15 = new global::Gtk.ToggleButton ();
+		this.tg15.CanFocus = true;
+		this.tg15.Name = "tg15";
+		this.tg15.UseUnderline = true;
+		this.tg15.Label = global::Mono.Unix.Catalog.GetString ("15");
+		this.tbLotomania.Add (this.tg15);
+		global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg15]));
+		w37.LeftAttach = ((uint)(15));
+		w37.RightAttach = ((uint)(16));
 		w37.XOptions = ((global::Gtk.AttachOptions)(4));
 		w37.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg18 = new global::Gtk.ToggleButton();
-		this.tg18.CanFocus = true;
-		this.tg18.Name = "tg18";
-		this.tg18.UseUnderline = true;
-		this.tg18.Label = global::Mono.Unix.Catalog.GetString("18");
-		this.tbLotomania.Add(this.tg18);
-		global::Gtk.Table.TableChild w38 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg18]));
-		w38.LeftAttach = ((uint)(18));
-		w38.RightAttach = ((uint)(19));
+		this.tg16 = new global::Gtk.ToggleButton ();
+		this.tg16.CanFocus = true;
+		this.tg16.Name = "tg16";
+		this.tg16.UseUnderline = true;
+		this.tg16.Label = global::Mono.Unix.Catalog.GetString ("16");
+		this.tbLotomania.Add (this.tg16);
+		global::Gtk.Table.TableChild w38 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg16]));
+		w38.LeftAttach = ((uint)(16));
+		w38.RightAttach = ((uint)(17));
 		w38.XOptions = ((global::Gtk.AttachOptions)(4));
 		w38.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg19 = new global::Gtk.ToggleButton();
-		this.tg19.CanFocus = true;
-		this.tg19.Name = "tg19";
-		this.tg19.UseUnderline = true;
-		this.tg19.Label = global::Mono.Unix.Catalog.GetString("19");
-		this.tbLotomania.Add(this.tg19);
-		global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg19]));
-		w39.LeftAttach = ((uint)(19));
-		w39.RightAttach = ((uint)(20));
+		this.tg17 = new global::Gtk.ToggleButton ();
+		this.tg17.CanFocus = true;
+		this.tg17.Name = "tg17";
+		this.tg17.UseUnderline = true;
+		this.tg17.Label = global::Mono.Unix.Catalog.GetString ("17");
+		this.tbLotomania.Add (this.tg17);
+		global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg17]));
+		w39.LeftAttach = ((uint)(17));
+		w39.RightAttach = ((uint)(18));
 		w39.XOptions = ((global::Gtk.AttachOptions)(4));
 		w39.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg2 = new global::Gtk.ToggleButton();
-		this.tg2.CanFocus = true;
-		this.tg2.Name = "tg2";
-		this.tg2.UseUnderline = true;
-		this.tg2.Label = global::Mono.Unix.Catalog.GetString("2");
-		this.tbLotomania.Add(this.tg2);
-		global::Gtk.Table.TableChild w40 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg2]));
-		w40.LeftAttach = ((uint)(2));
-		w40.RightAttach = ((uint)(3));
+		this.tg18 = new global::Gtk.ToggleButton ();
+		this.tg18.CanFocus = true;
+		this.tg18.Name = "tg18";
+		this.tg18.UseUnderline = true;
+		this.tg18.Label = global::Mono.Unix.Catalog.GetString ("18");
+		this.tbLotomania.Add (this.tg18);
+		global::Gtk.Table.TableChild w40 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg18]));
+		w40.LeftAttach = ((uint)(18));
+		w40.RightAttach = ((uint)(19));
 		w40.XOptions = ((global::Gtk.AttachOptions)(4));
 		w40.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg20 = new global::Gtk.ToggleButton();
-		this.tg20.CanFocus = true;
-		this.tg20.Name = "tg20";
-		this.tg20.UseUnderline = true;
-		this.tg20.Label = global::Mono.Unix.Catalog.GetString("20");
-		this.tbLotomania.Add(this.tg20);
-		global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg20]));
-		w41.LeftAttach = ((uint)(20));
-		w41.RightAttach = ((uint)(21));
+		this.tg19 = new global::Gtk.ToggleButton ();
+		this.tg19.CanFocus = true;
+		this.tg19.Name = "tg19";
+		this.tg19.UseUnderline = true;
+		this.tg19.Label = global::Mono.Unix.Catalog.GetString ("19");
+		this.tbLotomania.Add (this.tg19);
+		global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg19]));
+		w41.LeftAttach = ((uint)(19));
+		w41.RightAttach = ((uint)(20));
 		w41.XOptions = ((global::Gtk.AttachOptions)(4));
 		w41.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg21 = new global::Gtk.ToggleButton();
-		this.tg21.CanFocus = true;
-		this.tg21.Name = "tg21";
-		this.tg21.UseUnderline = true;
-		this.tg21.Label = global::Mono.Unix.Catalog.GetString("21");
-		this.tbLotomania.Add(this.tg21);
-		global::Gtk.Table.TableChild w42 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg21]));
-		w42.LeftAttach = ((uint)(21));
-		w42.RightAttach = ((uint)(22));
+		this.tg2 = new global::Gtk.ToggleButton ();
+		this.tg2.CanFocus = true;
+		this.tg2.Name = "tg2";
+		this.tg2.UseUnderline = true;
+		this.tg2.Label = global::Mono.Unix.Catalog.GetString ("2");
+		this.tbLotomania.Add (this.tg2);
+		global::Gtk.Table.TableChild w42 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg2]));
+		w42.LeftAttach = ((uint)(2));
+		w42.RightAttach = ((uint)(3));
 		w42.XOptions = ((global::Gtk.AttachOptions)(4));
 		w42.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg22 = new global::Gtk.ToggleButton();
-		this.tg22.CanFocus = true;
-		this.tg22.Name = "tg22";
-		this.tg22.UseUnderline = true;
-		this.tg22.Label = global::Mono.Unix.Catalog.GetString("22");
-		this.tbLotomania.Add(this.tg22);
-		global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg22]));
-		w43.LeftAttach = ((uint)(22));
-		w43.RightAttach = ((uint)(23));
+		this.tg20 = new global::Gtk.ToggleButton ();
+		this.tg20.CanFocus = true;
+		this.tg20.Name = "tg20";
+		this.tg20.UseUnderline = true;
+		this.tg20.Label = global::Mono.Unix.Catalog.GetString ("20");
+		this.tbLotomania.Add (this.tg20);
+		global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg20]));
+		w43.LeftAttach = ((uint)(20));
+		w43.RightAttach = ((uint)(21));
 		w43.XOptions = ((global::Gtk.AttachOptions)(4));
 		w43.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg23 = new global::Gtk.ToggleButton();
-		this.tg23.CanFocus = true;
-		this.tg23.Name = "tg23";
-		this.tg23.UseUnderline = true;
-		this.tg23.Label = global::Mono.Unix.Catalog.GetString("23");
-		this.tbLotomania.Add(this.tg23);
-		global::Gtk.Table.TableChild w44 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg23]));
-		w44.LeftAttach = ((uint)(23));
-		w44.RightAttach = ((uint)(24));
+		this.tg21 = new global::Gtk.ToggleButton ();
+		this.tg21.CanFocus = true;
+		this.tg21.Name = "tg21";
+		this.tg21.UseUnderline = true;
+		this.tg21.Label = global::Mono.Unix.Catalog.GetString ("21");
+		this.tbLotomania.Add (this.tg21);
+		global::Gtk.Table.TableChild w44 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg21]));
+		w44.LeftAttach = ((uint)(21));
+		w44.RightAttach = ((uint)(22));
 		w44.XOptions = ((global::Gtk.AttachOptions)(4));
 		w44.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg24 = new global::Gtk.ToggleButton();
-		this.tg24.CanFocus = true;
-		this.tg24.Name = "tg24";
-		this.tg24.UseUnderline = true;
-		this.tg24.Label = global::Mono.Unix.Catalog.GetString("24");
-		this.tbLotomania.Add(this.tg24);
-		global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg24]));
-		w45.LeftAttach = ((uint)(24));
-		w45.RightAttach = ((uint)(25));
+		this.tg22 = new global::Gtk.ToggleButton ();
+		this.tg22.CanFocus = true;
+		this.tg22.Name = "tg22";
+		this.tg22.UseUnderline = true;
+		this.tg22.Label = global::Mono.Unix.Catalog.GetString ("22");
+		this.tbLotomania.Add (this.tg22);
+		global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg22]));
+		w45.LeftAttach = ((uint)(22));
+		w45.RightAttach = ((uint)(23));
 		w45.XOptions = ((global::Gtk.AttachOptions)(4));
 		w45.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg25 = new global::Gtk.ToggleButton();
-		this.tg25.CanFocus = true;
-		this.tg25.Name = "tg25";
-		this.tg25.UseUnderline = true;
-		this.tg25.Label = global::Mono.Unix.Catalog.GetString("25");
-		this.tbLotomania.Add(this.tg25);
-		global::Gtk.Table.TableChild w46 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg25]));
-		w46.TopAttach = ((uint)(1));
-		w46.BottomAttach = ((uint)(2));
+		this.tg23 = new global::Gtk.ToggleButton ();
+		this.tg23.CanFocus = true;
+		this.tg23.Name = "tg23";
+		this.tg23.UseUnderline = true;
+		this.tg23.Label = global::Mono.Unix.Catalog.GetString ("23");
+		this.tbLotomania.Add (this.tg23);
+		global::Gtk.Table.TableChild w46 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg23]));
+		w46.LeftAttach = ((uint)(23));
+		w46.RightAttach = ((uint)(24));
 		w46.XOptions = ((global::Gtk.AttachOptions)(4));
-		w46.YOptions = ((global::Gtk.AttachOptions)(0));
+		w46.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg26 = new global::Gtk.ToggleButton();
-		this.tg26.CanFocus = true;
-		this.tg26.Name = "tg26";
-		this.tg26.UseUnderline = true;
-		this.tg26.Label = global::Mono.Unix.Catalog.GetString("26");
-		this.tbLotomania.Add(this.tg26);
-		global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg26]));
-		w47.TopAttach = ((uint)(1));
-		w47.BottomAttach = ((uint)(2));
-		w47.LeftAttach = ((uint)(1));
-		w47.RightAttach = ((uint)(2));
+		this.tg24 = new global::Gtk.ToggleButton ();
+		this.tg24.CanFocus = true;
+		this.tg24.Name = "tg24";
+		this.tg24.UseUnderline = true;
+		this.tg24.Label = global::Mono.Unix.Catalog.GetString ("24");
+		this.tbLotomania.Add (this.tg24);
+		global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg24]));
+		w47.LeftAttach = ((uint)(24));
+		w47.RightAttach = ((uint)(25));
 		w47.XOptions = ((global::Gtk.AttachOptions)(4));
 		w47.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg27 = new global::Gtk.ToggleButton();
-		this.tg27.CanFocus = true;
-		this.tg27.Name = "tg27";
-		this.tg27.UseUnderline = true;
-		this.tg27.Label = global::Mono.Unix.Catalog.GetString("27");
-		this.tbLotomania.Add(this.tg27);
-		global::Gtk.Table.TableChild w48 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg27]));
+		this.tg25 = new global::Gtk.ToggleButton ();
+		this.tg25.CanFocus = true;
+		this.tg25.Name = "tg25";
+		this.tg25.UseUnderline = true;
+		this.tg25.Label = global::Mono.Unix.Catalog.GetString ("25");
+		this.tbLotomania.Add (this.tg25);
+		global::Gtk.Table.TableChild w48 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg25]));
 		w48.TopAttach = ((uint)(1));
 		w48.BottomAttach = ((uint)(2));
-		w48.LeftAttach = ((uint)(2));
-		w48.RightAttach = ((uint)(3));
 		w48.XOptions = ((global::Gtk.AttachOptions)(4));
-		w48.YOptions = ((global::Gtk.AttachOptions)(4));
+		w48.YOptions = ((global::Gtk.AttachOptions)(0));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg28 = new global::Gtk.ToggleButton();
-		this.tg28.CanFocus = true;
-		this.tg28.Name = "tg28";
-		this.tg28.UseUnderline = true;
-		this.tg28.Label = global::Mono.Unix.Catalog.GetString("28");
-		this.tbLotomania.Add(this.tg28);
-		global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg28]));
+		this.tg26 = new global::Gtk.ToggleButton ();
+		this.tg26.CanFocus = true;
+		this.tg26.Name = "tg26";
+		this.tg26.UseUnderline = true;
+		this.tg26.Label = global::Mono.Unix.Catalog.GetString ("26");
+		this.tbLotomania.Add (this.tg26);
+		global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg26]));
 		w49.TopAttach = ((uint)(1));
 		w49.BottomAttach = ((uint)(2));
-		w49.LeftAttach = ((uint)(3));
-		w49.RightAttach = ((uint)(4));
+		w49.LeftAttach = ((uint)(1));
+		w49.RightAttach = ((uint)(2));
 		w49.XOptions = ((global::Gtk.AttachOptions)(4));
 		w49.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg29 = new global::Gtk.ToggleButton();
-		this.tg29.CanFocus = true;
-		this.tg29.Name = "tg29";
-		this.tg29.UseUnderline = true;
-		this.tg29.Label = global::Mono.Unix.Catalog.GetString("29");
-		this.tbLotomania.Add(this.tg29);
-		global::Gtk.Table.TableChild w50 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg29]));
+		this.tg27 = new global::Gtk.ToggleButton ();
+		this.tg27.CanFocus = true;
+		this.tg27.Name = "tg27";
+		this.tg27.UseUnderline = true;
+		this.tg27.Label = global::Mono.Unix.Catalog.GetString ("27");
+		this.tbLotomania.Add (this.tg27);
+		global::Gtk.Table.TableChild w50 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg27]));
 		w50.TopAttach = ((uint)(1));
 		w50.BottomAttach = ((uint)(2));
-		w50.LeftAttach = ((uint)(4));
-		w50.RightAttach = ((uint)(5));
+		w50.LeftAttach = ((uint)(2));
+		w50.RightAttach = ((uint)(3));
 		w50.XOptions = ((global::Gtk.AttachOptions)(4));
 		w50.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg3 = new global::Gtk.ToggleButton();
-		this.tg3.CanFocus = true;
-		this.tg3.Name = "tg3";
-		this.tg3.UseUnderline = true;
-		this.tg3.Label = global::Mono.Unix.Catalog.GetString("3");
-		this.tbLotomania.Add(this.tg3);
-		global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg3]));
+		this.tg28 = new global::Gtk.ToggleButton ();
+		this.tg28.CanFocus = true;
+		this.tg28.Name = "tg28";
+		this.tg28.UseUnderline = true;
+		this.tg28.Label = global::Mono.Unix.Catalog.GetString ("28");
+		this.tbLotomania.Add (this.tg28);
+		global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg28]));
+		w51.TopAttach = ((uint)(1));
+		w51.BottomAttach = ((uint)(2));
 		w51.LeftAttach = ((uint)(3));
 		w51.RightAttach = ((uint)(4));
 		w51.XOptions = ((global::Gtk.AttachOptions)(4));
 		w51.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg30 = new global::Gtk.ToggleButton();
-		this.tg30.CanFocus = true;
-		this.tg30.Name = "tg30";
-		this.tg30.UseUnderline = true;
-		this.tg30.Label = global::Mono.Unix.Catalog.GetString("30");
-		this.tbLotomania.Add(this.tg30);
-		global::Gtk.Table.TableChild w52 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg30]));
+		this.tg29 = new global::Gtk.ToggleButton ();
+		this.tg29.CanFocus = true;
+		this.tg29.Name = "tg29";
+		this.tg29.UseUnderline = true;
+		this.tg29.Label = global::Mono.Unix.Catalog.GetString ("29");
+		this.tbLotomania.Add (this.tg29);
+		global::Gtk.Table.TableChild w52 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg29]));
 		w52.TopAttach = ((uint)(1));
 		w52.BottomAttach = ((uint)(2));
-		w52.LeftAttach = ((uint)(5));
-		w52.RightAttach = ((uint)(6));
+		w52.LeftAttach = ((uint)(4));
+		w52.RightAttach = ((uint)(5));
 		w52.XOptions = ((global::Gtk.AttachOptions)(4));
 		w52.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg31 = new global::Gtk.ToggleButton();
-		this.tg31.CanFocus = true;
-		this.tg31.Name = "tg31";
-		this.tg31.UseUnderline = true;
-		this.tg31.Label = global::Mono.Unix.Catalog.GetString("31");
-		this.tbLotomania.Add(this.tg31);
-		global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg31]));
-		w53.TopAttach = ((uint)(1));
-		w53.BottomAttach = ((uint)(2));
-		w53.LeftAttach = ((uint)(6));
-		w53.RightAttach = ((uint)(7));
+		this.tg3 = new global::Gtk.ToggleButton ();
+		this.tg3.CanFocus = true;
+		this.tg3.Name = "tg3";
+		this.tg3.UseUnderline = true;
+		this.tg3.Label = global::Mono.Unix.Catalog.GetString ("3");
+		this.tbLotomania.Add (this.tg3);
+		global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg3]));
+		w53.LeftAttach = ((uint)(3));
+		w53.RightAttach = ((uint)(4));
 		w53.XOptions = ((global::Gtk.AttachOptions)(4));
 		w53.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg32 = new global::Gtk.ToggleButton();
-		this.tg32.CanFocus = true;
-		this.tg32.Name = "tg32";
-		this.tg32.UseUnderline = true;
-		this.tg32.Label = global::Mono.Unix.Catalog.GetString("32");
-		this.tbLotomania.Add(this.tg32);
-		global::Gtk.Table.TableChild w54 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg32]));
+		this.tg30 = new global::Gtk.ToggleButton ();
+		this.tg30.CanFocus = true;
+		this.tg30.Name = "tg30";
+		this.tg30.UseUnderline = true;
+		this.tg30.Label = global::Mono.Unix.Catalog.GetString ("30");
+		this.tbLotomania.Add (this.tg30);
+		global::Gtk.Table.TableChild w54 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg30]));
 		w54.TopAttach = ((uint)(1));
 		w54.BottomAttach = ((uint)(2));
-		w54.LeftAttach = ((uint)(7));
-		w54.RightAttach = ((uint)(8));
+		w54.LeftAttach = ((uint)(5));
+		w54.RightAttach = ((uint)(6));
 		w54.XOptions = ((global::Gtk.AttachOptions)(4));
 		w54.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg33 = new global::Gtk.ToggleButton();
-		this.tg33.CanFocus = true;
-		this.tg33.Name = "tg33";
-		this.tg33.UseUnderline = true;
-		this.tg33.Label = global::Mono.Unix.Catalog.GetString("33");
-		this.tbLotomania.Add(this.tg33);
-		global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg33]));
+		this.tg31 = new global::Gtk.ToggleButton ();
+		this.tg31.CanFocus = true;
+		this.tg31.Name = "tg31";
+		this.tg31.UseUnderline = true;
+		this.tg31.Label = global::Mono.Unix.Catalog.GetString ("31");
+		this.tbLotomania.Add (this.tg31);
+		global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg31]));
 		w55.TopAttach = ((uint)(1));
 		w55.BottomAttach = ((uint)(2));
-		w55.LeftAttach = ((uint)(8));
-		w55.RightAttach = ((uint)(9));
+		w55.LeftAttach = ((uint)(6));
+		w55.RightAttach = ((uint)(7));
 		w55.XOptions = ((global::Gtk.AttachOptions)(4));
 		w55.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg34 = new global::Gtk.ToggleButton();
-		this.tg34.CanFocus = true;
-		this.tg34.Name = "tg34";
-		this.tg34.UseUnderline = true;
-		this.tg34.Label = global::Mono.Unix.Catalog.GetString("34");
-		this.tbLotomania.Add(this.tg34);
-		global::Gtk.Table.TableChild w56 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg34]));
+		this.tg32 = new global::Gtk.ToggleButton ();
+		this.tg32.CanFocus = true;
+		this.tg32.Name = "tg32";
+		this.tg32.UseUnderline = true;
+		this.tg32.Label = global::Mono.Unix.Catalog.GetString ("32");
+		this.tbLotomania.Add (this.tg32);
+		global::Gtk.Table.TableChild w56 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg32]));
 		w56.TopAttach = ((uint)(1));
 		w56.BottomAttach = ((uint)(2));
-		w56.LeftAttach = ((uint)(9));
-		w56.RightAttach = ((uint)(10));
+		w56.LeftAttach = ((uint)(7));
+		w56.RightAttach = ((uint)(8));
 		w56.XOptions = ((global::Gtk.AttachOptions)(4));
 		w56.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg35 = new global::Gtk.ToggleButton();
-		this.tg35.CanFocus = true;
-		this.tg35.Name = "tg35";
-		this.tg35.UseUnderline = true;
-		this.tg35.Label = global::Mono.Unix.Catalog.GetString("35");
-		this.tbLotomania.Add(this.tg35);
-		global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg35]));
+		this.tg33 = new global::Gtk.ToggleButton ();
+		this.tg33.CanFocus = true;
+		this.tg33.Name = "tg33";
+		this.tg33.UseUnderline = true;
+		this.tg33.Label = global::Mono.Unix.Catalog.GetString ("33");
+		this.tbLotomania.Add (this.tg33);
+		global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg33]));
 		w57.TopAttach = ((uint)(1));
 		w57.BottomAttach = ((uint)(2));
-		w57.LeftAttach = ((uint)(10));
-		w57.RightAttach = ((uint)(11));
+		w57.LeftAttach = ((uint)(8));
+		w57.RightAttach = ((uint)(9));
 		w57.XOptions = ((global::Gtk.AttachOptions)(4));
 		w57.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg36 = new global::Gtk.ToggleButton();
-		this.tg36.CanFocus = true;
-		this.tg36.Name = "tg36";
-		this.tg36.UseUnderline = true;
-		this.tg36.Label = global::Mono.Unix.Catalog.GetString("36");
-		this.tbLotomania.Add(this.tg36);
-		global::Gtk.Table.TableChild w58 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg36]));
+		this.tg34 = new global::Gtk.ToggleButton ();
+		this.tg34.CanFocus = true;
+		this.tg34.Name = "tg34";
+		this.tg34.UseUnderline = true;
+		this.tg34.Label = global::Mono.Unix.Catalog.GetString ("34");
+		this.tbLotomania.Add (this.tg34);
+		global::Gtk.Table.TableChild w58 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg34]));
 		w58.TopAttach = ((uint)(1));
 		w58.BottomAttach = ((uint)(2));
-		w58.LeftAttach = ((uint)(11));
-		w58.RightAttach = ((uint)(12));
+		w58.LeftAttach = ((uint)(9));
+		w58.RightAttach = ((uint)(10));
 		w58.XOptions = ((global::Gtk.AttachOptions)(4));
 		w58.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg37 = new global::Gtk.ToggleButton();
-		this.tg37.CanFocus = true;
-		this.tg37.Name = "tg37";
-		this.tg37.UseUnderline = true;
-		this.tg37.Label = global::Mono.Unix.Catalog.GetString("37");
-		this.tbLotomania.Add(this.tg37);
-		global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg37]));
+		this.tg35 = new global::Gtk.ToggleButton ();
+		this.tg35.CanFocus = true;
+		this.tg35.Name = "tg35";
+		this.tg35.UseUnderline = true;
+		this.tg35.Label = global::Mono.Unix.Catalog.GetString ("35");
+		this.tbLotomania.Add (this.tg35);
+		global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg35]));
 		w59.TopAttach = ((uint)(1));
 		w59.BottomAttach = ((uint)(2));
-		w59.LeftAttach = ((uint)(12));
-		w59.RightAttach = ((uint)(13));
+		w59.LeftAttach = ((uint)(10));
+		w59.RightAttach = ((uint)(11));
 		w59.XOptions = ((global::Gtk.AttachOptions)(4));
 		w59.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg38 = new global::Gtk.ToggleButton();
-		this.tg38.CanFocus = true;
-		this.tg38.Name = "tg38";
-		this.tg38.UseUnderline = true;
-		this.tg38.Label = global::Mono.Unix.Catalog.GetString("38");
-		this.tbLotomania.Add(this.tg38);
-		global::Gtk.Table.TableChild w60 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg38]));
+		this.tg36 = new global::Gtk.ToggleButton ();
+		this.tg36.CanFocus = true;
+		this.tg36.Name = "tg36";
+		this.tg36.UseUnderline = true;
+		this.tg36.Label = global::Mono.Unix.Catalog.GetString ("36");
+		this.tbLotomania.Add (this.tg36);
+		global::Gtk.Table.TableChild w60 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg36]));
 		w60.TopAttach = ((uint)(1));
 		w60.BottomAttach = ((uint)(2));
-		w60.LeftAttach = ((uint)(13));
-		w60.RightAttach = ((uint)(14));
+		w60.LeftAttach = ((uint)(11));
+		w60.RightAttach = ((uint)(12));
 		w60.XOptions = ((global::Gtk.AttachOptions)(4));
 		w60.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg39 = new global::Gtk.ToggleButton();
-		this.tg39.CanFocus = true;
-		this.tg39.Name = "tg39";
-		this.tg39.UseUnderline = true;
-		this.tg39.Label = global::Mono.Unix.Catalog.GetString("39");
-		this.tbLotomania.Add(this.tg39);
-		global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg39]));
+		this.tg37 = new global::Gtk.ToggleButton ();
+		this.tg37.CanFocus = true;
+		this.tg37.Name = "tg37";
+		this.tg37.UseUnderline = true;
+		this.tg37.Label = global::Mono.Unix.Catalog.GetString ("37");
+		this.tbLotomania.Add (this.tg37);
+		global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg37]));
 		w61.TopAttach = ((uint)(1));
 		w61.BottomAttach = ((uint)(2));
-		w61.LeftAttach = ((uint)(14));
-		w61.RightAttach = ((uint)(15));
+		w61.LeftAttach = ((uint)(12));
+		w61.RightAttach = ((uint)(13));
 		w61.XOptions = ((global::Gtk.AttachOptions)(4));
 		w61.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg4 = new global::Gtk.ToggleButton();
-		this.tg4.CanFocus = true;
-		this.tg4.Name = "tg4";
-		this.tg4.UseUnderline = true;
-		this.tg4.Label = global::Mono.Unix.Catalog.GetString("4");
-		this.tbLotomania.Add(this.tg4);
-		global::Gtk.Table.TableChild w62 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg4]));
-		w62.LeftAttach = ((uint)(4));
-		w62.RightAttach = ((uint)(5));
+		this.tg38 = new global::Gtk.ToggleButton ();
+		this.tg38.CanFocus = true;
+		this.tg38.Name = "tg38";
+		this.tg38.UseUnderline = true;
+		this.tg38.Label = global::Mono.Unix.Catalog.GetString ("38");
+		this.tbLotomania.Add (this.tg38);
+		global::Gtk.Table.TableChild w62 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg38]));
+		w62.TopAttach = ((uint)(1));
+		w62.BottomAttach = ((uint)(2));
+		w62.LeftAttach = ((uint)(13));
+		w62.RightAttach = ((uint)(14));
 		w62.XOptions = ((global::Gtk.AttachOptions)(4));
 		w62.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg40 = new global::Gtk.ToggleButton();
-		this.tg40.CanFocus = true;
-		this.tg40.Name = "tg40";
-		this.tg40.UseUnderline = true;
-		this.tg40.Label = global::Mono.Unix.Catalog.GetString("40");
-		this.tbLotomania.Add(this.tg40);
-		global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg40]));
+		this.tg39 = new global::Gtk.ToggleButton ();
+		this.tg39.CanFocus = true;
+		this.tg39.Name = "tg39";
+		this.tg39.UseUnderline = true;
+		this.tg39.Label = global::Mono.Unix.Catalog.GetString ("39");
+		this.tbLotomania.Add (this.tg39);
+		global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg39]));
 		w63.TopAttach = ((uint)(1));
 		w63.BottomAttach = ((uint)(2));
-		w63.LeftAttach = ((uint)(15));
-		w63.RightAttach = ((uint)(16));
+		w63.LeftAttach = ((uint)(14));
+		w63.RightAttach = ((uint)(15));
 		w63.XOptions = ((global::Gtk.AttachOptions)(4));
 		w63.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg41 = new global::Gtk.ToggleButton();
-		this.tg41.CanFocus = true;
-		this.tg41.Name = "tg41";
-		this.tg41.UseUnderline = true;
-		this.tg41.Label = global::Mono.Unix.Catalog.GetString("41");
-		this.tbLotomania.Add(this.tg41);
-		global::Gtk.Table.TableChild w64 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg41]));
-		w64.TopAttach = ((uint)(1));
-		w64.BottomAttach = ((uint)(2));
-		w64.LeftAttach = ((uint)(16));
-		w64.RightAttach = ((uint)(17));
+		this.tg4 = new global::Gtk.ToggleButton ();
+		this.tg4.CanFocus = true;
+		this.tg4.Name = "tg4";
+		this.tg4.UseUnderline = true;
+		this.tg4.Label = global::Mono.Unix.Catalog.GetString ("4");
+		this.tbLotomania.Add (this.tg4);
+		global::Gtk.Table.TableChild w64 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg4]));
+		w64.LeftAttach = ((uint)(4));
+		w64.RightAttach = ((uint)(5));
 		w64.XOptions = ((global::Gtk.AttachOptions)(4));
 		w64.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg42 = new global::Gtk.ToggleButton();
-		this.tg42.CanFocus = true;
-		this.tg42.Name = "tg42";
-		this.tg42.UseUnderline = true;
-		this.tg42.Label = global::Mono.Unix.Catalog.GetString("42");
-		this.tbLotomania.Add(this.tg42);
-		global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg42]));
+		this.tg40 = new global::Gtk.ToggleButton ();
+		this.tg40.CanFocus = true;
+		this.tg40.Name = "tg40";
+		this.tg40.UseUnderline = true;
+		this.tg40.Label = global::Mono.Unix.Catalog.GetString ("40");
+		this.tbLotomania.Add (this.tg40);
+		global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg40]));
 		w65.TopAttach = ((uint)(1));
 		w65.BottomAttach = ((uint)(2));
-		w65.LeftAttach = ((uint)(17));
-		w65.RightAttach = ((uint)(18));
+		w65.LeftAttach = ((uint)(15));
+		w65.RightAttach = ((uint)(16));
 		w65.XOptions = ((global::Gtk.AttachOptions)(4));
 		w65.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg43 = new global::Gtk.ToggleButton();
-		this.tg43.CanFocus = true;
-		this.tg43.Name = "tg43";
-		this.tg43.UseUnderline = true;
-		this.tg43.Label = global::Mono.Unix.Catalog.GetString("43");
-		this.tbLotomania.Add(this.tg43);
-		global::Gtk.Table.TableChild w66 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg43]));
+		this.tg41 = new global::Gtk.ToggleButton ();
+		this.tg41.CanFocus = true;
+		this.tg41.Name = "tg41";
+		this.tg41.UseUnderline = true;
+		this.tg41.Label = global::Mono.Unix.Catalog.GetString ("41");
+		this.tbLotomania.Add (this.tg41);
+		global::Gtk.Table.TableChild w66 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg41]));
 		w66.TopAttach = ((uint)(1));
 		w66.BottomAttach = ((uint)(2));
-		w66.LeftAttach = ((uint)(18));
-		w66.RightAttach = ((uint)(19));
+		w66.LeftAttach = ((uint)(16));
+		w66.RightAttach = ((uint)(17));
 		w66.XOptions = ((global::Gtk.AttachOptions)(4));
 		w66.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg44 = new global::Gtk.ToggleButton();
-		this.tg44.CanFocus = true;
-		this.tg44.Name = "tg44";
-		this.tg44.UseUnderline = true;
-		this.tg44.Label = global::Mono.Unix.Catalog.GetString("44");
-		this.tbLotomania.Add(this.tg44);
-		global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg44]));
+		this.tg42 = new global::Gtk.ToggleButton ();
+		this.tg42.CanFocus = true;
+		this.tg42.Name = "tg42";
+		this.tg42.UseUnderline = true;
+		this.tg42.Label = global::Mono.Unix.Catalog.GetString ("42");
+		this.tbLotomania.Add (this.tg42);
+		global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg42]));
 		w67.TopAttach = ((uint)(1));
 		w67.BottomAttach = ((uint)(2));
-		w67.LeftAttach = ((uint)(19));
-		w67.RightAttach = ((uint)(20));
+		w67.LeftAttach = ((uint)(17));
+		w67.RightAttach = ((uint)(18));
 		w67.XOptions = ((global::Gtk.AttachOptions)(4));
 		w67.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg45 = new global::Gtk.ToggleButton();
-		this.tg45.CanFocus = true;
-		this.tg45.Name = "tg45";
-		this.tg45.UseUnderline = true;
-		this.tg45.Label = global::Mono.Unix.Catalog.GetString("45");
-		this.tbLotomania.Add(this.tg45);
-		global::Gtk.Table.TableChild w68 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg45]));
+		this.tg43 = new global::Gtk.ToggleButton ();
+		this.tg43.CanFocus = true;
+		this.tg43.Name = "tg43";
+		this.tg43.UseUnderline = true;
+		this.tg43.Label = global::Mono.Unix.Catalog.GetString ("43");
+		this.tbLotomania.Add (this.tg43);
+		global::Gtk.Table.TableChild w68 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg43]));
 		w68.TopAttach = ((uint)(1));
 		w68.BottomAttach = ((uint)(2));
-		w68.LeftAttach = ((uint)(20));
-		w68.RightAttach = ((uint)(21));
+		w68.LeftAttach = ((uint)(18));
+		w68.RightAttach = ((uint)(19));
 		w68.XOptions = ((global::Gtk.AttachOptions)(4));
 		w68.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg46 = new global::Gtk.ToggleButton();
-		this.tg46.CanFocus = true;
-		this.tg46.Name = "tg46";
-		this.tg46.UseUnderline = true;
-		this.tg46.Label = global::Mono.Unix.Catalog.GetString("46");
-		this.tbLotomania.Add(this.tg46);
-		global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg46]));
+		this.tg44 = new global::Gtk.ToggleButton ();
+		this.tg44.CanFocus = true;
+		this.tg44.Name = "tg44";
+		this.tg44.UseUnderline = true;
+		this.tg44.Label = global::Mono.Unix.Catalog.GetString ("44");
+		this.tbLotomania.Add (this.tg44);
+		global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg44]));
 		w69.TopAttach = ((uint)(1));
 		w69.BottomAttach = ((uint)(2));
-		w69.LeftAttach = ((uint)(21));
-		w69.RightAttach = ((uint)(22));
+		w69.LeftAttach = ((uint)(19));
+		w69.RightAttach = ((uint)(20));
 		w69.XOptions = ((global::Gtk.AttachOptions)(4));
 		w69.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg47 = new global::Gtk.ToggleButton();
-		this.tg47.CanFocus = true;
-		this.tg47.Name = "tg47";
-		this.tg47.UseUnderline = true;
-		this.tg47.Label = global::Mono.Unix.Catalog.GetString("47");
-		this.tbLotomania.Add(this.tg47);
-		global::Gtk.Table.TableChild w70 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg47]));
+		this.tg45 = new global::Gtk.ToggleButton ();
+		this.tg45.CanFocus = true;
+		this.tg45.Name = "tg45";
+		this.tg45.UseUnderline = true;
+		this.tg45.Label = global::Mono.Unix.Catalog.GetString ("45");
+		this.tbLotomania.Add (this.tg45);
+		global::Gtk.Table.TableChild w70 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg45]));
 		w70.TopAttach = ((uint)(1));
 		w70.BottomAttach = ((uint)(2));
-		w70.LeftAttach = ((uint)(22));
-		w70.RightAttach = ((uint)(23));
+		w70.LeftAttach = ((uint)(20));
+		w70.RightAttach = ((uint)(21));
 		w70.XOptions = ((global::Gtk.AttachOptions)(4));
 		w70.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg48 = new global::Gtk.ToggleButton();
-		this.tg48.CanFocus = true;
-		this.tg48.Name = "tg48";
-		this.tg48.UseUnderline = true;
-		this.tg48.Label = global::Mono.Unix.Catalog.GetString("48");
-		this.tbLotomania.Add(this.tg48);
-		global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg48]));
+		this.tg46 = new global::Gtk.ToggleButton ();
+		this.tg46.CanFocus = true;
+		this.tg46.Name = "tg46";
+		this.tg46.UseUnderline = true;
+		this.tg46.Label = global::Mono.Unix.Catalog.GetString ("46");
+		this.tbLotomania.Add (this.tg46);
+		global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg46]));
 		w71.TopAttach = ((uint)(1));
 		w71.BottomAttach = ((uint)(2));
-		w71.LeftAttach = ((uint)(23));
-		w71.RightAttach = ((uint)(24));
+		w71.LeftAttach = ((uint)(21));
+		w71.RightAttach = ((uint)(22));
 		w71.XOptions = ((global::Gtk.AttachOptions)(4));
 		w71.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg49 = new global::Gtk.ToggleButton();
-		this.tg49.CanFocus = true;
-		this.tg49.Name = "tg49";
-		this.tg49.UseUnderline = true;
-		this.tg49.Label = global::Mono.Unix.Catalog.GetString("49");
-		this.tbLotomania.Add(this.tg49);
-		global::Gtk.Table.TableChild w72 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg49]));
+		this.tg47 = new global::Gtk.ToggleButton ();
+		this.tg47.CanFocus = true;
+		this.tg47.Name = "tg47";
+		this.tg47.UseUnderline = true;
+		this.tg47.Label = global::Mono.Unix.Catalog.GetString ("47");
+		this.tbLotomania.Add (this.tg47);
+		global::Gtk.Table.TableChild w72 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg47]));
 		w72.TopAttach = ((uint)(1));
 		w72.BottomAttach = ((uint)(2));
-		w72.LeftAttach = ((uint)(24));
-		w72.RightAttach = ((uint)(25));
+		w72.LeftAttach = ((uint)(22));
+		w72.RightAttach = ((uint)(23));
 		w72.XOptions = ((global::Gtk.AttachOptions)(4));
 		w72.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg5 = new global::Gtk.ToggleButton();
-		this.tg5.CanFocus = true;
-		this.tg5.Name = "tg5";
-		this.tg5.UseUnderline = true;
-		this.tg5.Label = global::Mono.Unix.Catalog.GetString("5");
-		this.tbLotomania.Add(this.tg5);
-		global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg5]));
-		w73.LeftAttach = ((uint)(5));
-		w73.RightAttach = ((uint)(6));
+		this.tg48 = new global::Gtk.ToggleButton ();
+		this.tg48.CanFocus = true;
+		this.tg48.Name = "tg48";
+		this.tg48.UseUnderline = true;
+		this.tg48.Label = global::Mono.Unix.Catalog.GetString ("48");
+		this.tbLotomania.Add (this.tg48);
+		global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg48]));
+		w73.TopAttach = ((uint)(1));
+		w73.BottomAttach = ((uint)(2));
+		w73.LeftAttach = ((uint)(23));
+		w73.RightAttach = ((uint)(24));
 		w73.XOptions = ((global::Gtk.AttachOptions)(4));
 		w73.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg50 = new global::Gtk.ToggleButton();
-		this.tg50.CanFocus = true;
-		this.tg50.Name = "tg50";
-		this.tg50.UseUnderline = true;
-		this.tg50.Label = global::Mono.Unix.Catalog.GetString("50");
-		this.tbLotomania.Add(this.tg50);
-		global::Gtk.Table.TableChild w74 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg50]));
-		w74.TopAttach = ((uint)(2));
-		w74.BottomAttach = ((uint)(3));
+		this.tg49 = new global::Gtk.ToggleButton ();
+		this.tg49.CanFocus = true;
+		this.tg49.Name = "tg49";
+		this.tg49.UseUnderline = true;
+		this.tg49.Label = global::Mono.Unix.Catalog.GetString ("49");
+		this.tbLotomania.Add (this.tg49);
+		global::Gtk.Table.TableChild w74 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg49]));
+		w74.TopAttach = ((uint)(1));
+		w74.BottomAttach = ((uint)(2));
+		w74.LeftAttach = ((uint)(24));
+		w74.RightAttach = ((uint)(25));
 		w74.XOptions = ((global::Gtk.AttachOptions)(4));
 		w74.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg51 = new global::Gtk.ToggleButton();
-		this.tg51.CanFocus = true;
-		this.tg51.Name = "tg51";
-		this.tg51.UseUnderline = true;
-		this.tg51.Label = global::Mono.Unix.Catalog.GetString("51");
-		this.tbLotomania.Add(this.tg51);
-		global::Gtk.Table.TableChild w75 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg51]));
-		w75.TopAttach = ((uint)(2));
-		w75.BottomAttach = ((uint)(3));
-		w75.LeftAttach = ((uint)(1));
-		w75.RightAttach = ((uint)(2));
+		this.tg5 = new global::Gtk.ToggleButton ();
+		this.tg5.CanFocus = true;
+		this.tg5.Name = "tg5";
+		this.tg5.UseUnderline = true;
+		this.tg5.Label = global::Mono.Unix.Catalog.GetString ("5");
+		this.tbLotomania.Add (this.tg5);
+		global::Gtk.Table.TableChild w75 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg5]));
+		w75.LeftAttach = ((uint)(5));
+		w75.RightAttach = ((uint)(6));
 		w75.XOptions = ((global::Gtk.AttachOptions)(4));
 		w75.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg52 = new global::Gtk.ToggleButton();
-		this.tg52.CanFocus = true;
-		this.tg52.Name = "tg52";
-		this.tg52.UseUnderline = true;
-		this.tg52.Label = global::Mono.Unix.Catalog.GetString("52");
-		this.tbLotomania.Add(this.tg52);
-		global::Gtk.Table.TableChild w76 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg52]));
+		this.tg50 = new global::Gtk.ToggleButton ();
+		this.tg50.CanFocus = true;
+		this.tg50.Name = "tg50";
+		this.tg50.UseUnderline = true;
+		this.tg50.Label = global::Mono.Unix.Catalog.GetString ("50");
+		this.tbLotomania.Add (this.tg50);
+		global::Gtk.Table.TableChild w76 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg50]));
 		w76.TopAttach = ((uint)(2));
 		w76.BottomAttach = ((uint)(3));
-		w76.LeftAttach = ((uint)(2));
-		w76.RightAttach = ((uint)(3));
 		w76.XOptions = ((global::Gtk.AttachOptions)(4));
 		w76.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg53 = new global::Gtk.ToggleButton();
-		this.tg53.CanFocus = true;
-		this.tg53.Name = "tg53";
-		this.tg53.UseUnderline = true;
-		this.tg53.Label = global::Mono.Unix.Catalog.GetString("53");
-		this.tbLotomania.Add(this.tg53);
-		global::Gtk.Table.TableChild w77 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg53]));
+		this.tg51 = new global::Gtk.ToggleButton ();
+		this.tg51.CanFocus = true;
+		this.tg51.Name = "tg51";
+		this.tg51.UseUnderline = true;
+		this.tg51.Label = global::Mono.Unix.Catalog.GetString ("51");
+		this.tbLotomania.Add (this.tg51);
+		global::Gtk.Table.TableChild w77 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg51]));
 		w77.TopAttach = ((uint)(2));
 		w77.BottomAttach = ((uint)(3));
-		w77.LeftAttach = ((uint)(3));
-		w77.RightAttach = ((uint)(4));
+		w77.LeftAttach = ((uint)(1));
+		w77.RightAttach = ((uint)(2));
 		w77.XOptions = ((global::Gtk.AttachOptions)(4));
 		w77.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg54 = new global::Gtk.ToggleButton();
-		this.tg54.CanFocus = true;
-		this.tg54.Name = "tg54";
-		this.tg54.UseUnderline = true;
-		this.tg54.Label = global::Mono.Unix.Catalog.GetString("54");
-		this.tbLotomania.Add(this.tg54);
-		global::Gtk.Table.TableChild w78 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg54]));
+		this.tg52 = new global::Gtk.ToggleButton ();
+		this.tg52.CanFocus = true;
+		this.tg52.Name = "tg52";
+		this.tg52.UseUnderline = true;
+		this.tg52.Label = global::Mono.Unix.Catalog.GetString ("52");
+		this.tbLotomania.Add (this.tg52);
+		global::Gtk.Table.TableChild w78 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg52]));
 		w78.TopAttach = ((uint)(2));
 		w78.BottomAttach = ((uint)(3));
-		w78.LeftAttach = ((uint)(4));
-		w78.RightAttach = ((uint)(5));
+		w78.LeftAttach = ((uint)(2));
+		w78.RightAttach = ((uint)(3));
 		w78.XOptions = ((global::Gtk.AttachOptions)(4));
 		w78.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg55 = new global::Gtk.ToggleButton();
-		this.tg55.CanFocus = true;
-		this.tg55.Name = "tg55";
-		this.tg55.UseUnderline = true;
-		this.tg55.Label = global::Mono.Unix.Catalog.GetString("55");
-		this.tbLotomania.Add(this.tg55);
-		global::Gtk.Table.TableChild w79 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg55]));
+		this.tg53 = new global::Gtk.ToggleButton ();
+		this.tg53.CanFocus = true;
+		this.tg53.Name = "tg53";
+		this.tg53.UseUnderline = true;
+		this.tg53.Label = global::Mono.Unix.Catalog.GetString ("53");
+		this.tbLotomania.Add (this.tg53);
+		global::Gtk.Table.TableChild w79 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg53]));
 		w79.TopAttach = ((uint)(2));
 		w79.BottomAttach = ((uint)(3));
-		w79.LeftAttach = ((uint)(5));
-		w79.RightAttach = ((uint)(6));
+		w79.LeftAttach = ((uint)(3));
+		w79.RightAttach = ((uint)(4));
 		w79.XOptions = ((global::Gtk.AttachOptions)(4));
 		w79.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg56 = new global::Gtk.ToggleButton();
-		this.tg56.CanFocus = true;
-		this.tg56.Name = "tg56";
-		this.tg56.UseUnderline = true;
-		this.tg56.Label = global::Mono.Unix.Catalog.GetString("56");
-		this.tbLotomania.Add(this.tg56);
-		global::Gtk.Table.TableChild w80 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg56]));
+		this.tg54 = new global::Gtk.ToggleButton ();
+		this.tg54.CanFocus = true;
+		this.tg54.Name = "tg54";
+		this.tg54.UseUnderline = true;
+		this.tg54.Label = global::Mono.Unix.Catalog.GetString ("54");
+		this.tbLotomania.Add (this.tg54);
+		global::Gtk.Table.TableChild w80 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg54]));
 		w80.TopAttach = ((uint)(2));
 		w80.BottomAttach = ((uint)(3));
-		w80.LeftAttach = ((uint)(6));
-		w80.RightAttach = ((uint)(7));
+		w80.LeftAttach = ((uint)(4));
+		w80.RightAttach = ((uint)(5));
 		w80.XOptions = ((global::Gtk.AttachOptions)(4));
 		w80.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg57 = new global::Gtk.ToggleButton();
-		this.tg57.CanFocus = true;
-		this.tg57.Name = "tg57";
-		this.tg57.UseUnderline = true;
-		this.tg57.Label = global::Mono.Unix.Catalog.GetString("57");
-		this.tbLotomania.Add(this.tg57);
-		global::Gtk.Table.TableChild w81 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg57]));
+		this.tg55 = new global::Gtk.ToggleButton ();
+		this.tg55.CanFocus = true;
+		this.tg55.Name = "tg55";
+		this.tg55.UseUnderline = true;
+		this.tg55.Label = global::Mono.Unix.Catalog.GetString ("55");
+		this.tbLotomania.Add (this.tg55);
+		global::Gtk.Table.TableChild w81 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg55]));
 		w81.TopAttach = ((uint)(2));
 		w81.BottomAttach = ((uint)(3));
-		w81.LeftAttach = ((uint)(7));
-		w81.RightAttach = ((uint)(8));
+		w81.LeftAttach = ((uint)(5));
+		w81.RightAttach = ((uint)(6));
 		w81.XOptions = ((global::Gtk.AttachOptions)(4));
 		w81.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg58 = new global::Gtk.ToggleButton();
-		this.tg58.CanFocus = true;
-		this.tg58.Name = "tg58";
-		this.tg58.UseUnderline = true;
-		this.tg58.Label = global::Mono.Unix.Catalog.GetString("58");
-		this.tbLotomania.Add(this.tg58);
-		global::Gtk.Table.TableChild w82 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg58]));
+		this.tg56 = new global::Gtk.ToggleButton ();
+		this.tg56.CanFocus = true;
+		this.tg56.Name = "tg56";
+		this.tg56.UseUnderline = true;
+		this.tg56.Label = global::Mono.Unix.Catalog.GetString ("56");
+		this.tbLotomania.Add (this.tg56);
+		global::Gtk.Table.TableChild w82 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg56]));
 		w82.TopAttach = ((uint)(2));
 		w82.BottomAttach = ((uint)(3));
-		w82.LeftAttach = ((uint)(8));
-		w82.RightAttach = ((uint)(9));
+		w82.LeftAttach = ((uint)(6));
+		w82.RightAttach = ((uint)(7));
 		w82.XOptions = ((global::Gtk.AttachOptions)(4));
 		w82.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg59 = new global::Gtk.ToggleButton();
-		this.tg59.CanFocus = true;
-		this.tg59.Name = "tg59";
-		this.tg59.UseUnderline = true;
-		this.tg59.Label = global::Mono.Unix.Catalog.GetString("59");
-		this.tbLotomania.Add(this.tg59);
-		global::Gtk.Table.TableChild w83 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg59]));
+		this.tg57 = new global::Gtk.ToggleButton ();
+		this.tg57.CanFocus = true;
+		this.tg57.Name = "tg57";
+		this.tg57.UseUnderline = true;
+		this.tg57.Label = global::Mono.Unix.Catalog.GetString ("57");
+		this.tbLotomania.Add (this.tg57);
+		global::Gtk.Table.TableChild w83 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg57]));
 		w83.TopAttach = ((uint)(2));
 		w83.BottomAttach = ((uint)(3));
-		w83.LeftAttach = ((uint)(9));
-		w83.RightAttach = ((uint)(10));
+		w83.LeftAttach = ((uint)(7));
+		w83.RightAttach = ((uint)(8));
 		w83.XOptions = ((global::Gtk.AttachOptions)(4));
 		w83.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg6 = new global::Gtk.ToggleButton();
-		this.tg6.CanFocus = true;
-		this.tg6.Name = "tg6";
-		this.tg6.UseUnderline = true;
-		this.tg6.Label = global::Mono.Unix.Catalog.GetString("6");
-		this.tbLotomania.Add(this.tg6);
-		global::Gtk.Table.TableChild w84 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg6]));
-		w84.LeftAttach = ((uint)(6));
-		w84.RightAttach = ((uint)(7));
+		this.tg58 = new global::Gtk.ToggleButton ();
+		this.tg58.CanFocus = true;
+		this.tg58.Name = "tg58";
+		this.tg58.UseUnderline = true;
+		this.tg58.Label = global::Mono.Unix.Catalog.GetString ("58");
+		this.tbLotomania.Add (this.tg58);
+		global::Gtk.Table.TableChild w84 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg58]));
+		w84.TopAttach = ((uint)(2));
+		w84.BottomAttach = ((uint)(3));
+		w84.LeftAttach = ((uint)(8));
+		w84.RightAttach = ((uint)(9));
 		w84.XOptions = ((global::Gtk.AttachOptions)(4));
 		w84.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg60 = new global::Gtk.ToggleButton();
-		this.tg60.CanFocus = true;
-		this.tg60.Name = "tg60";
-		this.tg60.UseUnderline = true;
-		this.tg60.Label = global::Mono.Unix.Catalog.GetString("60");
-		this.tbLotomania.Add(this.tg60);
-		global::Gtk.Table.TableChild w85 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg60]));
+		this.tg59 = new global::Gtk.ToggleButton ();
+		this.tg59.CanFocus = true;
+		this.tg59.Name = "tg59";
+		this.tg59.UseUnderline = true;
+		this.tg59.Label = global::Mono.Unix.Catalog.GetString ("59");
+		this.tbLotomania.Add (this.tg59);
+		global::Gtk.Table.TableChild w85 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg59]));
 		w85.TopAttach = ((uint)(2));
 		w85.BottomAttach = ((uint)(3));
-		w85.LeftAttach = ((uint)(10));
-		w85.RightAttach = ((uint)(11));
+		w85.LeftAttach = ((uint)(9));
+		w85.RightAttach = ((uint)(10));
 		w85.XOptions = ((global::Gtk.AttachOptions)(4));
 		w85.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg61 = new global::Gtk.ToggleButton();
-		this.tg61.CanFocus = true;
-		this.tg61.Name = "tg61";
-		this.tg61.UseUnderline = true;
-		this.tg61.Label = global::Mono.Unix.Catalog.GetString("61");
-		this.tbLotomania.Add(this.tg61);
-		global::Gtk.Table.TableChild w86 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg61]));
-		w86.TopAttach = ((uint)(2));
-		w86.BottomAttach = ((uint)(3));
-		w86.LeftAttach = ((uint)(11));
-		w86.RightAttach = ((uint)(12));
+		this.tg6 = new global::Gtk.ToggleButton ();
+		this.tg6.CanFocus = true;
+		this.tg6.Name = "tg6";
+		this.tg6.UseUnderline = true;
+		this.tg6.Label = global::Mono.Unix.Catalog.GetString ("6");
+		this.tbLotomania.Add (this.tg6);
+		global::Gtk.Table.TableChild w86 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg6]));
+		w86.LeftAttach = ((uint)(6));
+		w86.RightAttach = ((uint)(7));
 		w86.XOptions = ((global::Gtk.AttachOptions)(4));
 		w86.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg62 = new global::Gtk.ToggleButton();
-		this.tg62.CanFocus = true;
-		this.tg62.Name = "tg62";
-		this.tg62.UseUnderline = true;
-		this.tg62.Label = global::Mono.Unix.Catalog.GetString("62");
-		this.tbLotomania.Add(this.tg62);
-		global::Gtk.Table.TableChild w87 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg62]));
+		this.tg60 = new global::Gtk.ToggleButton ();
+		this.tg60.CanFocus = true;
+		this.tg60.Name = "tg60";
+		this.tg60.UseUnderline = true;
+		this.tg60.Label = global::Mono.Unix.Catalog.GetString ("60");
+		this.tbLotomania.Add (this.tg60);
+		global::Gtk.Table.TableChild w87 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg60]));
 		w87.TopAttach = ((uint)(2));
 		w87.BottomAttach = ((uint)(3));
-		w87.LeftAttach = ((uint)(12));
-		w87.RightAttach = ((uint)(13));
+		w87.LeftAttach = ((uint)(10));
+		w87.RightAttach = ((uint)(11));
 		w87.XOptions = ((global::Gtk.AttachOptions)(4));
 		w87.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg63 = new global::Gtk.ToggleButton();
-		this.tg63.CanFocus = true;
-		this.tg63.Name = "tg63";
-		this.tg63.UseUnderline = true;
-		this.tg63.Label = global::Mono.Unix.Catalog.GetString("63");
-		this.tbLotomania.Add(this.tg63);
-		global::Gtk.Table.TableChild w88 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg63]));
+		this.tg61 = new global::Gtk.ToggleButton ();
+		this.tg61.CanFocus = true;
+		this.tg61.Name = "tg61";
+		this.tg61.UseUnderline = true;
+		this.tg61.Label = global::Mono.Unix.Catalog.GetString ("61");
+		this.tbLotomania.Add (this.tg61);
+		global::Gtk.Table.TableChild w88 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg61]));
 		w88.TopAttach = ((uint)(2));
 		w88.BottomAttach = ((uint)(3));
-		w88.LeftAttach = ((uint)(13));
-		w88.RightAttach = ((uint)(14));
+		w88.LeftAttach = ((uint)(11));
+		w88.RightAttach = ((uint)(12));
 		w88.XOptions = ((global::Gtk.AttachOptions)(4));
 		w88.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg64 = new global::Gtk.ToggleButton();
-		this.tg64.CanFocus = true;
-		this.tg64.Name = "tg64";
-		this.tg64.UseUnderline = true;
-		this.tg64.Label = global::Mono.Unix.Catalog.GetString("64");
-		this.tbLotomania.Add(this.tg64);
-		global::Gtk.Table.TableChild w89 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg64]));
+		this.tg62 = new global::Gtk.ToggleButton ();
+		this.tg62.CanFocus = true;
+		this.tg62.Name = "tg62";
+		this.tg62.UseUnderline = true;
+		this.tg62.Label = global::Mono.Unix.Catalog.GetString ("62");
+		this.tbLotomania.Add (this.tg62);
+		global::Gtk.Table.TableChild w89 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg62]));
 		w89.TopAttach = ((uint)(2));
 		w89.BottomAttach = ((uint)(3));
-		w89.LeftAttach = ((uint)(14));
-		w89.RightAttach = ((uint)(15));
+		w89.LeftAttach = ((uint)(12));
+		w89.RightAttach = ((uint)(13));
 		w89.XOptions = ((global::Gtk.AttachOptions)(4));
 		w89.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg65 = new global::Gtk.ToggleButton();
-		this.tg65.CanFocus = true;
-		this.tg65.Name = "tg65";
-		this.tg65.UseUnderline = true;
-		this.tg65.Label = global::Mono.Unix.Catalog.GetString("65");
-		this.tbLotomania.Add(this.tg65);
-		global::Gtk.Table.TableChild w90 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg65]));
+		this.tg63 = new global::Gtk.ToggleButton ();
+		this.tg63.CanFocus = true;
+		this.tg63.Name = "tg63";
+		this.tg63.UseUnderline = true;
+		this.tg63.Label = global::Mono.Unix.Catalog.GetString ("63");
+		this.tbLotomania.Add (this.tg63);
+		global::Gtk.Table.TableChild w90 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg63]));
 		w90.TopAttach = ((uint)(2));
 		w90.BottomAttach = ((uint)(3));
-		w90.LeftAttach = ((uint)(15));
-		w90.RightAttach = ((uint)(16));
+		w90.LeftAttach = ((uint)(13));
+		w90.RightAttach = ((uint)(14));
 		w90.XOptions = ((global::Gtk.AttachOptions)(4));
 		w90.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg66 = new global::Gtk.ToggleButton();
-		this.tg66.CanFocus = true;
-		this.tg66.Name = "tg66";
-		this.tg66.UseUnderline = true;
-		this.tg66.Label = global::Mono.Unix.Catalog.GetString("66");
-		this.tbLotomania.Add(this.tg66);
-		global::Gtk.Table.TableChild w91 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg66]));
+		this.tg64 = new global::Gtk.ToggleButton ();
+		this.tg64.CanFocus = true;
+		this.tg64.Name = "tg64";
+		this.tg64.UseUnderline = true;
+		this.tg64.Label = global::Mono.Unix.Catalog.GetString ("64");
+		this.tbLotomania.Add (this.tg64);
+		global::Gtk.Table.TableChild w91 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg64]));
 		w91.TopAttach = ((uint)(2));
 		w91.BottomAttach = ((uint)(3));
-		w91.LeftAttach = ((uint)(16));
-		w91.RightAttach = ((uint)(17));
+		w91.LeftAttach = ((uint)(14));
+		w91.RightAttach = ((uint)(15));
 		w91.XOptions = ((global::Gtk.AttachOptions)(4));
 		w91.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg67 = new global::Gtk.ToggleButton();
-		this.tg67.CanFocus = true;
-		this.tg67.Name = "tg67";
-		this.tg67.UseUnderline = true;
-		this.tg67.Label = global::Mono.Unix.Catalog.GetString("67");
-		this.tbLotomania.Add(this.tg67);
-		global::Gtk.Table.TableChild w92 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg67]));
+		this.tg65 = new global::Gtk.ToggleButton ();
+		this.tg65.CanFocus = true;
+		this.tg65.Name = "tg65";
+		this.tg65.UseUnderline = true;
+		this.tg65.Label = global::Mono.Unix.Catalog.GetString ("65");
+		this.tbLotomania.Add (this.tg65);
+		global::Gtk.Table.TableChild w92 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg65]));
 		w92.TopAttach = ((uint)(2));
 		w92.BottomAttach = ((uint)(3));
-		w92.LeftAttach = ((uint)(17));
-		w92.RightAttach = ((uint)(18));
+		w92.LeftAttach = ((uint)(15));
+		w92.RightAttach = ((uint)(16));
 		w92.XOptions = ((global::Gtk.AttachOptions)(4));
 		w92.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg68 = new global::Gtk.ToggleButton();
-		this.tg68.CanFocus = true;
-		this.tg68.Name = "tg68";
-		this.tg68.UseUnderline = true;
-		this.tg68.Label = global::Mono.Unix.Catalog.GetString("68");
-		this.tbLotomania.Add(this.tg68);
-		global::Gtk.Table.TableChild w93 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg68]));
+		this.tg66 = new global::Gtk.ToggleButton ();
+		this.tg66.CanFocus = true;
+		this.tg66.Name = "tg66";
+		this.tg66.UseUnderline = true;
+		this.tg66.Label = global::Mono.Unix.Catalog.GetString ("66");
+		this.tbLotomania.Add (this.tg66);
+		global::Gtk.Table.TableChild w93 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg66]));
 		w93.TopAttach = ((uint)(2));
 		w93.BottomAttach = ((uint)(3));
-		w93.LeftAttach = ((uint)(18));
-		w93.RightAttach = ((uint)(19));
+		w93.LeftAttach = ((uint)(16));
+		w93.RightAttach = ((uint)(17));
 		w93.XOptions = ((global::Gtk.AttachOptions)(4));
 		w93.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg69 = new global::Gtk.ToggleButton();
-		this.tg69.CanFocus = true;
-		this.tg69.Name = "tg69";
-		this.tg69.UseUnderline = true;
-		this.tg69.Label = global::Mono.Unix.Catalog.GetString("69");
-		this.tbLotomania.Add(this.tg69);
-		global::Gtk.Table.TableChild w94 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg69]));
+		this.tg67 = new global::Gtk.ToggleButton ();
+		this.tg67.CanFocus = true;
+		this.tg67.Name = "tg67";
+		this.tg67.UseUnderline = true;
+		this.tg67.Label = global::Mono.Unix.Catalog.GetString ("67");
+		this.tbLotomania.Add (this.tg67);
+		global::Gtk.Table.TableChild w94 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg67]));
 		w94.TopAttach = ((uint)(2));
 		w94.BottomAttach = ((uint)(3));
-		w94.LeftAttach = ((uint)(19));
-		w94.RightAttach = ((uint)(20));
+		w94.LeftAttach = ((uint)(17));
+		w94.RightAttach = ((uint)(18));
 		w94.XOptions = ((global::Gtk.AttachOptions)(4));
 		w94.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg7 = new global::Gtk.ToggleButton();
-		this.tg7.CanFocus = true;
-		this.tg7.Name = "tg7";
-		this.tg7.UseUnderline = true;
-		this.tg7.Label = global::Mono.Unix.Catalog.GetString("7");
-		this.tbLotomania.Add(this.tg7);
-		global::Gtk.Table.TableChild w95 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg7]));
-		w95.LeftAttach = ((uint)(7));
-		w95.RightAttach = ((uint)(8));
+		this.tg68 = new global::Gtk.ToggleButton ();
+		this.tg68.CanFocus = true;
+		this.tg68.Name = "tg68";
+		this.tg68.UseUnderline = true;
+		this.tg68.Label = global::Mono.Unix.Catalog.GetString ("68");
+		this.tbLotomania.Add (this.tg68);
+		global::Gtk.Table.TableChild w95 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg68]));
+		w95.TopAttach = ((uint)(2));
+		w95.BottomAttach = ((uint)(3));
+		w95.LeftAttach = ((uint)(18));
+		w95.RightAttach = ((uint)(19));
 		w95.XOptions = ((global::Gtk.AttachOptions)(4));
 		w95.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg70 = new global::Gtk.ToggleButton();
-		this.tg70.CanFocus = true;
-		this.tg70.Name = "tg70";
-		this.tg70.UseUnderline = true;
-		this.tg70.Label = global::Mono.Unix.Catalog.GetString("70");
-		this.tbLotomania.Add(this.tg70);
-		global::Gtk.Table.TableChild w96 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg70]));
+		this.tg69 = new global::Gtk.ToggleButton ();
+		this.tg69.CanFocus = true;
+		this.tg69.Name = "tg69";
+		this.tg69.UseUnderline = true;
+		this.tg69.Label = global::Mono.Unix.Catalog.GetString ("69");
+		this.tbLotomania.Add (this.tg69);
+		global::Gtk.Table.TableChild w96 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg69]));
 		w96.TopAttach = ((uint)(2));
 		w96.BottomAttach = ((uint)(3));
-		w96.LeftAttach = ((uint)(20));
-		w96.RightAttach = ((uint)(21));
+		w96.LeftAttach = ((uint)(19));
+		w96.RightAttach = ((uint)(20));
 		w96.XOptions = ((global::Gtk.AttachOptions)(4));
 		w96.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg71 = new global::Gtk.ToggleButton();
-		this.tg71.CanFocus = true;
-		this.tg71.Name = "tg71";
-		this.tg71.UseUnderline = true;
-		this.tg71.Label = global::Mono.Unix.Catalog.GetString("71");
-		this.tbLotomania.Add(this.tg71);
-		global::Gtk.Table.TableChild w97 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg71]));
-		w97.TopAttach = ((uint)(2));
-		w97.BottomAttach = ((uint)(3));
-		w97.LeftAttach = ((uint)(21));
-		w97.RightAttach = ((uint)(22));
+		this.tg7 = new global::Gtk.ToggleButton ();
+		this.tg7.CanFocus = true;
+		this.tg7.Name = "tg7";
+		this.tg7.UseUnderline = true;
+		this.tg7.Label = global::Mono.Unix.Catalog.GetString ("7");
+		this.tbLotomania.Add (this.tg7);
+		global::Gtk.Table.TableChild w97 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg7]));
+		w97.LeftAttach = ((uint)(7));
+		w97.RightAttach = ((uint)(8));
 		w97.XOptions = ((global::Gtk.AttachOptions)(4));
 		w97.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg72 = new global::Gtk.ToggleButton();
-		this.tg72.CanFocus = true;
-		this.tg72.Name = "tg72";
-		this.tg72.UseUnderline = true;
-		this.tg72.Label = global::Mono.Unix.Catalog.GetString("72");
-		this.tbLotomania.Add(this.tg72);
-		global::Gtk.Table.TableChild w98 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg72]));
+		this.tg70 = new global::Gtk.ToggleButton ();
+		this.tg70.CanFocus = true;
+		this.tg70.Name = "tg70";
+		this.tg70.UseUnderline = true;
+		this.tg70.Label = global::Mono.Unix.Catalog.GetString ("70");
+		this.tbLotomania.Add (this.tg70);
+		global::Gtk.Table.TableChild w98 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg70]));
 		w98.TopAttach = ((uint)(2));
 		w98.BottomAttach = ((uint)(3));
-		w98.LeftAttach = ((uint)(22));
-		w98.RightAttach = ((uint)(23));
+		w98.LeftAttach = ((uint)(20));
+		w98.RightAttach = ((uint)(21));
 		w98.XOptions = ((global::Gtk.AttachOptions)(4));
 		w98.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg73 = new global::Gtk.ToggleButton();
-		this.tg73.CanFocus = true;
-		this.tg73.Name = "tg73";
-		this.tg73.UseUnderline = true;
-		this.tg73.Label = global::Mono.Unix.Catalog.GetString("73");
-		this.tbLotomania.Add(this.tg73);
-		global::Gtk.Table.TableChild w99 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg73]));
+		this.tg71 = new global::Gtk.ToggleButton ();
+		this.tg71.CanFocus = true;
+		this.tg71.Name = "tg71";
+		this.tg71.UseUnderline = true;
+		this.tg71.Label = global::Mono.Unix.Catalog.GetString ("71");
+		this.tbLotomania.Add (this.tg71);
+		global::Gtk.Table.TableChild w99 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg71]));
 		w99.TopAttach = ((uint)(2));
 		w99.BottomAttach = ((uint)(3));
-		w99.LeftAttach = ((uint)(23));
-		w99.RightAttach = ((uint)(24));
+		w99.LeftAttach = ((uint)(21));
+		w99.RightAttach = ((uint)(22));
 		w99.XOptions = ((global::Gtk.AttachOptions)(4));
 		w99.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg74 = new global::Gtk.ToggleButton();
-		this.tg74.CanFocus = true;
-		this.tg74.Name = "tg74";
-		this.tg74.UseUnderline = true;
-		this.tg74.Label = global::Mono.Unix.Catalog.GetString("74");
-		this.tbLotomania.Add(this.tg74);
-		global::Gtk.Table.TableChild w100 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg74]));
+		this.tg72 = new global::Gtk.ToggleButton ();
+		this.tg72.CanFocus = true;
+		this.tg72.Name = "tg72";
+		this.tg72.UseUnderline = true;
+		this.tg72.Label = global::Mono.Unix.Catalog.GetString ("72");
+		this.tbLotomania.Add (this.tg72);
+		global::Gtk.Table.TableChild w100 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg72]));
 		w100.TopAttach = ((uint)(2));
 		w100.BottomAttach = ((uint)(3));
-		w100.LeftAttach = ((uint)(24));
-		w100.RightAttach = ((uint)(25));
+		w100.LeftAttach = ((uint)(22));
+		w100.RightAttach = ((uint)(23));
 		w100.XOptions = ((global::Gtk.AttachOptions)(4));
 		w100.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg75 = new global::Gtk.ToggleButton();
-		this.tg75.CanFocus = true;
-		this.tg75.Name = "tg75";
-		this.tg75.UseUnderline = true;
-		this.tg75.Label = global::Mono.Unix.Catalog.GetString("75");
-		this.tbLotomania.Add(this.tg75);
-		global::Gtk.Table.TableChild w101 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg75]));
-		w101.TopAttach = ((uint)(3));
-		w101.BottomAttach = ((uint)(4));
+		this.tg73 = new global::Gtk.ToggleButton ();
+		this.tg73.CanFocus = true;
+		this.tg73.Name = "tg73";
+		this.tg73.UseUnderline = true;
+		this.tg73.Label = global::Mono.Unix.Catalog.GetString ("73");
+		this.tbLotomania.Add (this.tg73);
+		global::Gtk.Table.TableChild w101 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg73]));
+		w101.TopAttach = ((uint)(2));
+		w101.BottomAttach = ((uint)(3));
+		w101.LeftAttach = ((uint)(23));
+		w101.RightAttach = ((uint)(24));
 		w101.XOptions = ((global::Gtk.AttachOptions)(4));
 		w101.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg76 = new global::Gtk.ToggleButton();
-		this.tg76.CanFocus = true;
-		this.tg76.Name = "tg76";
-		this.tg76.UseUnderline = true;
-		this.tg76.Label = global::Mono.Unix.Catalog.GetString("76");
-		this.tbLotomania.Add(this.tg76);
-		global::Gtk.Table.TableChild w102 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg76]));
-		w102.TopAttach = ((uint)(3));
-		w102.BottomAttach = ((uint)(4));
-		w102.LeftAttach = ((uint)(1));
-		w102.RightAttach = ((uint)(2));
+		this.tg74 = new global::Gtk.ToggleButton ();
+		this.tg74.CanFocus = true;
+		this.tg74.Name = "tg74";
+		this.tg74.UseUnderline = true;
+		this.tg74.Label = global::Mono.Unix.Catalog.GetString ("74");
+		this.tbLotomania.Add (this.tg74);
+		global::Gtk.Table.TableChild w102 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg74]));
+		w102.TopAttach = ((uint)(2));
+		w102.BottomAttach = ((uint)(3));
+		w102.LeftAttach = ((uint)(24));
+		w102.RightAttach = ((uint)(25));
 		w102.XOptions = ((global::Gtk.AttachOptions)(4));
 		w102.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg77 = new global::Gtk.ToggleButton();
-		this.tg77.CanFocus = true;
-		this.tg77.Name = "tg77";
-		this.tg77.UseUnderline = true;
-		this.tg77.Label = global::Mono.Unix.Catalog.GetString("77");
-		this.tbLotomania.Add(this.tg77);
-		global::Gtk.Table.TableChild w103 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg77]));
+		this.tg75 = new global::Gtk.ToggleButton ();
+		this.tg75.CanFocus = true;
+		this.tg75.Name = "tg75";
+		this.tg75.UseUnderline = true;
+		this.tg75.Label = global::Mono.Unix.Catalog.GetString ("75");
+		this.tbLotomania.Add (this.tg75);
+		global::Gtk.Table.TableChild w103 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg75]));
 		w103.TopAttach = ((uint)(3));
 		w103.BottomAttach = ((uint)(4));
-		w103.LeftAttach = ((uint)(2));
-		w103.RightAttach = ((uint)(3));
 		w103.XOptions = ((global::Gtk.AttachOptions)(4));
 		w103.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg78 = new global::Gtk.ToggleButton();
-		this.tg78.CanFocus = true;
-		this.tg78.Name = "tg78";
-		this.tg78.UseUnderline = true;
-		this.tg78.Label = global::Mono.Unix.Catalog.GetString("78");
-		this.tbLotomania.Add(this.tg78);
-		global::Gtk.Table.TableChild w104 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg78]));
+		this.tg76 = new global::Gtk.ToggleButton ();
+		this.tg76.CanFocus = true;
+		this.tg76.Name = "tg76";
+		this.tg76.UseUnderline = true;
+		this.tg76.Label = global::Mono.Unix.Catalog.GetString ("76");
+		this.tbLotomania.Add (this.tg76);
+		global::Gtk.Table.TableChild w104 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg76]));
 		w104.TopAttach = ((uint)(3));
 		w104.BottomAttach = ((uint)(4));
-		w104.LeftAttach = ((uint)(3));
-		w104.RightAttach = ((uint)(4));
+		w104.LeftAttach = ((uint)(1));
+		w104.RightAttach = ((uint)(2));
 		w104.XOptions = ((global::Gtk.AttachOptions)(4));
 		w104.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg79 = new global::Gtk.ToggleButton();
-		this.tg79.CanFocus = true;
-		this.tg79.Name = "tg79";
-		this.tg79.UseUnderline = true;
-		this.tg79.Label = global::Mono.Unix.Catalog.GetString("79");
-		this.tbLotomania.Add(this.tg79);
-		global::Gtk.Table.TableChild w105 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg79]));
+		this.tg77 = new global::Gtk.ToggleButton ();
+		this.tg77.CanFocus = true;
+		this.tg77.Name = "tg77";
+		this.tg77.UseUnderline = true;
+		this.tg77.Label = global::Mono.Unix.Catalog.GetString ("77");
+		this.tbLotomania.Add (this.tg77);
+		global::Gtk.Table.TableChild w105 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg77]));
 		w105.TopAttach = ((uint)(3));
 		w105.BottomAttach = ((uint)(4));
-		w105.LeftAttach = ((uint)(4));
-		w105.RightAttach = ((uint)(5));
+		w105.LeftAttach = ((uint)(2));
+		w105.RightAttach = ((uint)(3));
 		w105.XOptions = ((global::Gtk.AttachOptions)(4));
 		w105.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg8 = new global::Gtk.ToggleButton();
-		this.tg8.CanFocus = true;
-		this.tg8.Name = "tg8";
-		this.tg8.UseUnderline = true;
-		this.tg8.Label = global::Mono.Unix.Catalog.GetString("8");
-		this.tbLotomania.Add(this.tg8);
-		global::Gtk.Table.TableChild w106 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg8]));
-		w106.LeftAttach = ((uint)(8));
-		w106.RightAttach = ((uint)(9));
+		this.tg78 = new global::Gtk.ToggleButton ();
+		this.tg78.CanFocus = true;
+		this.tg78.Name = "tg78";
+		this.tg78.UseUnderline = true;
+		this.tg78.Label = global::Mono.Unix.Catalog.GetString ("78");
+		this.tbLotomania.Add (this.tg78);
+		global::Gtk.Table.TableChild w106 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg78]));
+		w106.TopAttach = ((uint)(3));
+		w106.BottomAttach = ((uint)(4));
+		w106.LeftAttach = ((uint)(3));
+		w106.RightAttach = ((uint)(4));
 		w106.XOptions = ((global::Gtk.AttachOptions)(4));
 		w106.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg80 = new global::Gtk.ToggleButton();
-		this.tg80.CanFocus = true;
-		this.tg80.Name = "tg80";
-		this.tg80.UseUnderline = true;
-		this.tg80.Label = global::Mono.Unix.Catalog.GetString("80");
-		this.tbLotomania.Add(this.tg80);
-		global::Gtk.Table.TableChild w107 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg80]));
+		this.tg79 = new global::Gtk.ToggleButton ();
+		this.tg79.CanFocus = true;
+		this.tg79.Name = "tg79";
+		this.tg79.UseUnderline = true;
+		this.tg79.Label = global::Mono.Unix.Catalog.GetString ("79");
+		this.tbLotomania.Add (this.tg79);
+		global::Gtk.Table.TableChild w107 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg79]));
 		w107.TopAttach = ((uint)(3));
 		w107.BottomAttach = ((uint)(4));
-		w107.LeftAttach = ((uint)(5));
-		w107.RightAttach = ((uint)(6));
+		w107.LeftAttach = ((uint)(4));
+		w107.RightAttach = ((uint)(5));
 		w107.XOptions = ((global::Gtk.AttachOptions)(4));
 		w107.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg81 = new global::Gtk.ToggleButton();
-		this.tg81.CanFocus = true;
-		this.tg81.Name = "tg81";
-		this.tg81.UseUnderline = true;
-		this.tg81.Label = global::Mono.Unix.Catalog.GetString("81");
-		this.tbLotomania.Add(this.tg81);
-		global::Gtk.Table.TableChild w108 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg81]));
-		w108.TopAttach = ((uint)(3));
-		w108.BottomAttach = ((uint)(4));
-		w108.LeftAttach = ((uint)(6));
-		w108.RightAttach = ((uint)(7));
+		this.tg8 = new global::Gtk.ToggleButton ();
+		this.tg8.CanFocus = true;
+		this.tg8.Name = "tg8";
+		this.tg8.UseUnderline = true;
+		this.tg8.Label = global::Mono.Unix.Catalog.GetString ("8");
+		this.tbLotomania.Add (this.tg8);
+		global::Gtk.Table.TableChild w108 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg8]));
+		w108.LeftAttach = ((uint)(8));
+		w108.RightAttach = ((uint)(9));
 		w108.XOptions = ((global::Gtk.AttachOptions)(4));
 		w108.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg82 = new global::Gtk.ToggleButton();
-		this.tg82.CanFocus = true;
-		this.tg82.Name = "tg82";
-		this.tg82.UseUnderline = true;
-		this.tg82.Label = global::Mono.Unix.Catalog.GetString("82");
-		this.tbLotomania.Add(this.tg82);
-		global::Gtk.Table.TableChild w109 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg82]));
+		this.tg80 = new global::Gtk.ToggleButton ();
+		this.tg80.CanFocus = true;
+		this.tg80.Name = "tg80";
+		this.tg80.UseUnderline = true;
+		this.tg80.Label = global::Mono.Unix.Catalog.GetString ("80");
+		this.tbLotomania.Add (this.tg80);
+		global::Gtk.Table.TableChild w109 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg80]));
 		w109.TopAttach = ((uint)(3));
 		w109.BottomAttach = ((uint)(4));
-		w109.LeftAttach = ((uint)(7));
-		w109.RightAttach = ((uint)(8));
+		w109.LeftAttach = ((uint)(5));
+		w109.RightAttach = ((uint)(6));
 		w109.XOptions = ((global::Gtk.AttachOptions)(4));
 		w109.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg83 = new global::Gtk.ToggleButton();
-		this.tg83.CanFocus = true;
-		this.tg83.Name = "tg83";
-		this.tg83.UseUnderline = true;
-		this.tg83.Label = global::Mono.Unix.Catalog.GetString("83");
-		this.tbLotomania.Add(this.tg83);
-		global::Gtk.Table.TableChild w110 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg83]));
+		this.tg81 = new global::Gtk.ToggleButton ();
+		this.tg81.CanFocus = true;
+		this.tg81.Name = "tg81";
+		this.tg81.UseUnderline = true;
+		this.tg81.Label = global::Mono.Unix.Catalog.GetString ("81");
+		this.tbLotomania.Add (this.tg81);
+		global::Gtk.Table.TableChild w110 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg81]));
 		w110.TopAttach = ((uint)(3));
 		w110.BottomAttach = ((uint)(4));
-		w110.LeftAttach = ((uint)(8));
-		w110.RightAttach = ((uint)(9));
+		w110.LeftAttach = ((uint)(6));
+		w110.RightAttach = ((uint)(7));
 		w110.XOptions = ((global::Gtk.AttachOptions)(4));
 		w110.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg84 = new global::Gtk.ToggleButton();
-		this.tg84.CanFocus = true;
-		this.tg84.Name = "tg84";
-		this.tg84.UseUnderline = true;
-		this.tg84.Label = global::Mono.Unix.Catalog.GetString("84");
-		this.tbLotomania.Add(this.tg84);
-		global::Gtk.Table.TableChild w111 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg84]));
+		this.tg82 = new global::Gtk.ToggleButton ();
+		this.tg82.CanFocus = true;
+		this.tg82.Name = "tg82";
+		this.tg82.UseUnderline = true;
+		this.tg82.Label = global::Mono.Unix.Catalog.GetString ("82");
+		this.tbLotomania.Add (this.tg82);
+		global::Gtk.Table.TableChild w111 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg82]));
 		w111.TopAttach = ((uint)(3));
 		w111.BottomAttach = ((uint)(4));
-		w111.LeftAttach = ((uint)(9));
-		w111.RightAttach = ((uint)(10));
+		w111.LeftAttach = ((uint)(7));
+		w111.RightAttach = ((uint)(8));
 		w111.XOptions = ((global::Gtk.AttachOptions)(4));
 		w111.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg85 = new global::Gtk.ToggleButton();
-		this.tg85.CanFocus = true;
-		this.tg85.Name = "tg85";
-		this.tg85.UseUnderline = true;
-		this.tg85.Label = global::Mono.Unix.Catalog.GetString("85");
-		this.tbLotomania.Add(this.tg85);
-		global::Gtk.Table.TableChild w112 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg85]));
+		this.tg83 = new global::Gtk.ToggleButton ();
+		this.tg83.CanFocus = true;
+		this.tg83.Name = "tg83";
+		this.tg83.UseUnderline = true;
+		this.tg83.Label = global::Mono.Unix.Catalog.GetString ("83");
+		this.tbLotomania.Add (this.tg83);
+		global::Gtk.Table.TableChild w112 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg83]));
 		w112.TopAttach = ((uint)(3));
 		w112.BottomAttach = ((uint)(4));
-		w112.LeftAttach = ((uint)(10));
-		w112.RightAttach = ((uint)(11));
+		w112.LeftAttach = ((uint)(8));
+		w112.RightAttach = ((uint)(9));
 		w112.XOptions = ((global::Gtk.AttachOptions)(4));
 		w112.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg86 = new global::Gtk.ToggleButton();
-		this.tg86.CanFocus = true;
-		this.tg86.Name = "tg86";
-		this.tg86.UseUnderline = true;
-		this.tg86.Label = global::Mono.Unix.Catalog.GetString("86");
-		this.tbLotomania.Add(this.tg86);
-		global::Gtk.Table.TableChild w113 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg86]));
+		this.tg84 = new global::Gtk.ToggleButton ();
+		this.tg84.CanFocus = true;
+		this.tg84.Name = "tg84";
+		this.tg84.UseUnderline = true;
+		this.tg84.Label = global::Mono.Unix.Catalog.GetString ("84");
+		this.tbLotomania.Add (this.tg84);
+		global::Gtk.Table.TableChild w113 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg84]));
 		w113.TopAttach = ((uint)(3));
 		w113.BottomAttach = ((uint)(4));
-		w113.LeftAttach = ((uint)(11));
-		w113.RightAttach = ((uint)(12));
+		w113.LeftAttach = ((uint)(9));
+		w113.RightAttach = ((uint)(10));
 		w113.XOptions = ((global::Gtk.AttachOptions)(4));
 		w113.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg87 = new global::Gtk.ToggleButton();
-		this.tg87.CanFocus = true;
-		this.tg87.Name = "tg87";
-		this.tg87.UseUnderline = true;
-		this.tg87.Label = global::Mono.Unix.Catalog.GetString("87");
-		this.tbLotomania.Add(this.tg87);
-		global::Gtk.Table.TableChild w114 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg87]));
+		this.tg85 = new global::Gtk.ToggleButton ();
+		this.tg85.CanFocus = true;
+		this.tg85.Name = "tg85";
+		this.tg85.UseUnderline = true;
+		this.tg85.Label = global::Mono.Unix.Catalog.GetString ("85");
+		this.tbLotomania.Add (this.tg85);
+		global::Gtk.Table.TableChild w114 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg85]));
 		w114.TopAttach = ((uint)(3));
 		w114.BottomAttach = ((uint)(4));
-		w114.LeftAttach = ((uint)(12));
-		w114.RightAttach = ((uint)(13));
+		w114.LeftAttach = ((uint)(10));
+		w114.RightAttach = ((uint)(11));
 		w114.XOptions = ((global::Gtk.AttachOptions)(4));
 		w114.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg88 = new global::Gtk.ToggleButton();
-		this.tg88.CanFocus = true;
-		this.tg88.Name = "tg88";
-		this.tg88.UseUnderline = true;
-		this.tg88.Label = global::Mono.Unix.Catalog.GetString("88");
-		this.tbLotomania.Add(this.tg88);
-		global::Gtk.Table.TableChild w115 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg88]));
+		this.tg86 = new global::Gtk.ToggleButton ();
+		this.tg86.CanFocus = true;
+		this.tg86.Name = "tg86";
+		this.tg86.UseUnderline = true;
+		this.tg86.Label = global::Mono.Unix.Catalog.GetString ("86");
+		this.tbLotomania.Add (this.tg86);
+		global::Gtk.Table.TableChild w115 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg86]));
 		w115.TopAttach = ((uint)(3));
 		w115.BottomAttach = ((uint)(4));
-		w115.LeftAttach = ((uint)(13));
-		w115.RightAttach = ((uint)(14));
+		w115.LeftAttach = ((uint)(11));
+		w115.RightAttach = ((uint)(12));
 		w115.XOptions = ((global::Gtk.AttachOptions)(4));
 		w115.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg89 = new global::Gtk.ToggleButton();
-		this.tg89.CanFocus = true;
-		this.tg89.Name = "tg89";
-		this.tg89.UseUnderline = true;
-		this.tg89.Label = global::Mono.Unix.Catalog.GetString("89");
-		this.tbLotomania.Add(this.tg89);
-		global::Gtk.Table.TableChild w116 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg89]));
+		this.tg87 = new global::Gtk.ToggleButton ();
+		this.tg87.CanFocus = true;
+		this.tg87.Name = "tg87";
+		this.tg87.UseUnderline = true;
+		this.tg87.Label = global::Mono.Unix.Catalog.GetString ("87");
+		this.tbLotomania.Add (this.tg87);
+		global::Gtk.Table.TableChild w116 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg87]));
 		w116.TopAttach = ((uint)(3));
 		w116.BottomAttach = ((uint)(4));
-		w116.LeftAttach = ((uint)(14));
-		w116.RightAttach = ((uint)(15));
+		w116.LeftAttach = ((uint)(12));
+		w116.RightAttach = ((uint)(13));
 		w116.XOptions = ((global::Gtk.AttachOptions)(4));
 		w116.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg9 = new global::Gtk.ToggleButton();
-		this.tg9.CanFocus = true;
-		this.tg9.Name = "tg9";
-		this.tg9.UseUnderline = true;
-		this.tg9.Label = global::Mono.Unix.Catalog.GetString("9");
-		this.tbLotomania.Add(this.tg9);
-		global::Gtk.Table.TableChild w117 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg9]));
-		w117.LeftAttach = ((uint)(9));
-		w117.RightAttach = ((uint)(10));
+		this.tg88 = new global::Gtk.ToggleButton ();
+		this.tg88.CanFocus = true;
+		this.tg88.Name = "tg88";
+		this.tg88.UseUnderline = true;
+		this.tg88.Label = global::Mono.Unix.Catalog.GetString ("88");
+		this.tbLotomania.Add (this.tg88);
+		global::Gtk.Table.TableChild w117 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg88]));
+		w117.TopAttach = ((uint)(3));
+		w117.BottomAttach = ((uint)(4));
+		w117.LeftAttach = ((uint)(13));
+		w117.RightAttach = ((uint)(14));
 		w117.XOptions = ((global::Gtk.AttachOptions)(4));
 		w117.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg90 = new global::Gtk.ToggleButton();
-		this.tg90.CanFocus = true;
-		this.tg90.Name = "tg90";
-		this.tg90.UseUnderline = true;
-		this.tg90.Label = global::Mono.Unix.Catalog.GetString("90");
-		this.tbLotomania.Add(this.tg90);
-		global::Gtk.Table.TableChild w118 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg90]));
+		this.tg89 = new global::Gtk.ToggleButton ();
+		this.tg89.CanFocus = true;
+		this.tg89.Name = "tg89";
+		this.tg89.UseUnderline = true;
+		this.tg89.Label = global::Mono.Unix.Catalog.GetString ("89");
+		this.tbLotomania.Add (this.tg89);
+		global::Gtk.Table.TableChild w118 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg89]));
 		w118.TopAttach = ((uint)(3));
 		w118.BottomAttach = ((uint)(4));
-		w118.LeftAttach = ((uint)(15));
-		w118.RightAttach = ((uint)(16));
+		w118.LeftAttach = ((uint)(14));
+		w118.RightAttach = ((uint)(15));
 		w118.XOptions = ((global::Gtk.AttachOptions)(4));
 		w118.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg91 = new global::Gtk.ToggleButton();
-		this.tg91.CanFocus = true;
-		this.tg91.Name = "tg91";
-		this.tg91.UseUnderline = true;
-		this.tg91.Label = global::Mono.Unix.Catalog.GetString("91");
-		this.tbLotomania.Add(this.tg91);
-		global::Gtk.Table.TableChild w119 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg91]));
-		w119.TopAttach = ((uint)(3));
-		w119.BottomAttach = ((uint)(4));
-		w119.LeftAttach = ((uint)(16));
-		w119.RightAttach = ((uint)(17));
+		this.tg9 = new global::Gtk.ToggleButton ();
+		this.tg9.CanFocus = true;
+		this.tg9.Name = "tg9";
+		this.tg9.UseUnderline = true;
+		this.tg9.Label = global::Mono.Unix.Catalog.GetString ("9");
+		this.tbLotomania.Add (this.tg9);
+		global::Gtk.Table.TableChild w119 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg9]));
+		w119.LeftAttach = ((uint)(9));
+		w119.RightAttach = ((uint)(10));
 		w119.XOptions = ((global::Gtk.AttachOptions)(4));
 		w119.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg92 = new global::Gtk.ToggleButton();
-		this.tg92.CanFocus = true;
-		this.tg92.Name = "tg92";
-		this.tg92.UseUnderline = true;
-		this.tg92.Label = global::Mono.Unix.Catalog.GetString("92");
-		this.tbLotomania.Add(this.tg92);
-		global::Gtk.Table.TableChild w120 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg92]));
+		this.tg90 = new global::Gtk.ToggleButton ();
+		this.tg90.CanFocus = true;
+		this.tg90.Name = "tg90";
+		this.tg90.UseUnderline = true;
+		this.tg90.Label = global::Mono.Unix.Catalog.GetString ("90");
+		this.tbLotomania.Add (this.tg90);
+		global::Gtk.Table.TableChild w120 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg90]));
 		w120.TopAttach = ((uint)(3));
 		w120.BottomAttach = ((uint)(4));
-		w120.LeftAttach = ((uint)(17));
-		w120.RightAttach = ((uint)(18));
+		w120.LeftAttach = ((uint)(15));
+		w120.RightAttach = ((uint)(16));
 		w120.XOptions = ((global::Gtk.AttachOptions)(4));
 		w120.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg93 = new global::Gtk.ToggleButton();
-		this.tg93.CanFocus = true;
-		this.tg93.Name = "tg93";
-		this.tg93.UseUnderline = true;
-		this.tg93.Label = global::Mono.Unix.Catalog.GetString("93");
-		this.tbLotomania.Add(this.tg93);
-		global::Gtk.Table.TableChild w121 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg93]));
+		this.tg91 = new global::Gtk.ToggleButton ();
+		this.tg91.CanFocus = true;
+		this.tg91.Name = "tg91";
+		this.tg91.UseUnderline = true;
+		this.tg91.Label = global::Mono.Unix.Catalog.GetString ("91");
+		this.tbLotomania.Add (this.tg91);
+		global::Gtk.Table.TableChild w121 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg91]));
 		w121.TopAttach = ((uint)(3));
 		w121.BottomAttach = ((uint)(4));
-		w121.LeftAttach = ((uint)(18));
-		w121.RightAttach = ((uint)(19));
+		w121.LeftAttach = ((uint)(16));
+		w121.RightAttach = ((uint)(17));
 		w121.XOptions = ((global::Gtk.AttachOptions)(4));
 		w121.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg94 = new global::Gtk.ToggleButton();
-		this.tg94.CanFocus = true;
-		this.tg94.Name = "tg94";
-		this.tg94.UseUnderline = true;
-		this.tg94.Label = global::Mono.Unix.Catalog.GetString("94");
-		this.tbLotomania.Add(this.tg94);
-		global::Gtk.Table.TableChild w122 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg94]));
+		this.tg92 = new global::Gtk.ToggleButton ();
+		this.tg92.CanFocus = true;
+		this.tg92.Name = "tg92";
+		this.tg92.UseUnderline = true;
+		this.tg92.Label = global::Mono.Unix.Catalog.GetString ("92");
+		this.tbLotomania.Add (this.tg92);
+		global::Gtk.Table.TableChild w122 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg92]));
 		w122.TopAttach = ((uint)(3));
 		w122.BottomAttach = ((uint)(4));
-		w122.LeftAttach = ((uint)(19));
-		w122.RightAttach = ((uint)(20));
+		w122.LeftAttach = ((uint)(17));
+		w122.RightAttach = ((uint)(18));
 		w122.XOptions = ((global::Gtk.AttachOptions)(4));
 		w122.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg95 = new global::Gtk.ToggleButton();
-		this.tg95.CanFocus = true;
-		this.tg95.Name = "tg95";
-		this.tg95.UseUnderline = true;
-		this.tg95.Label = global::Mono.Unix.Catalog.GetString("95");
-		this.tbLotomania.Add(this.tg95);
-		global::Gtk.Table.TableChild w123 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg95]));
+		this.tg93 = new global::Gtk.ToggleButton ();
+		this.tg93.CanFocus = true;
+		this.tg93.Name = "tg93";
+		this.tg93.UseUnderline = true;
+		this.tg93.Label = global::Mono.Unix.Catalog.GetString ("93");
+		this.tbLotomania.Add (this.tg93);
+		global::Gtk.Table.TableChild w123 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg93]));
 		w123.TopAttach = ((uint)(3));
 		w123.BottomAttach = ((uint)(4));
-		w123.LeftAttach = ((uint)(20));
-		w123.RightAttach = ((uint)(21));
+		w123.LeftAttach = ((uint)(18));
+		w123.RightAttach = ((uint)(19));
 		w123.XOptions = ((global::Gtk.AttachOptions)(4));
 		w123.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg96 = new global::Gtk.ToggleButton();
-		this.tg96.CanFocus = true;
-		this.tg96.Name = "tg96";
-		this.tg96.UseUnderline = true;
-		this.tg96.Label = global::Mono.Unix.Catalog.GetString("96");
-		this.tbLotomania.Add(this.tg96);
-		global::Gtk.Table.TableChild w124 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg96]));
+		this.tg94 = new global::Gtk.ToggleButton ();
+		this.tg94.CanFocus = true;
+		this.tg94.Name = "tg94";
+		this.tg94.UseUnderline = true;
+		this.tg94.Label = global::Mono.Unix.Catalog.GetString ("94");
+		this.tbLotomania.Add (this.tg94);
+		global::Gtk.Table.TableChild w124 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg94]));
 		w124.TopAttach = ((uint)(3));
 		w124.BottomAttach = ((uint)(4));
-		w124.LeftAttach = ((uint)(21));
-		w124.RightAttach = ((uint)(22));
+		w124.LeftAttach = ((uint)(19));
+		w124.RightAttach = ((uint)(20));
 		w124.XOptions = ((global::Gtk.AttachOptions)(4));
 		w124.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg97 = new global::Gtk.ToggleButton();
-		this.tg97.CanFocus = true;
-		this.tg97.Name = "tg97";
-		this.tg97.UseUnderline = true;
-		this.tg97.Label = global::Mono.Unix.Catalog.GetString("97");
-		this.tbLotomania.Add(this.tg97);
-		global::Gtk.Table.TableChild w125 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg97]));
+		this.tg95 = new global::Gtk.ToggleButton ();
+		this.tg95.CanFocus = true;
+		this.tg95.Name = "tg95";
+		this.tg95.UseUnderline = true;
+		this.tg95.Label = global::Mono.Unix.Catalog.GetString ("95");
+		this.tbLotomania.Add (this.tg95);
+		global::Gtk.Table.TableChild w125 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg95]));
 		w125.TopAttach = ((uint)(3));
 		w125.BottomAttach = ((uint)(4));
-		w125.LeftAttach = ((uint)(22));
-		w125.RightAttach = ((uint)(23));
+		w125.LeftAttach = ((uint)(20));
+		w125.RightAttach = ((uint)(21));
 		w125.XOptions = ((global::Gtk.AttachOptions)(4));
 		w125.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg98 = new global::Gtk.ToggleButton();
-		this.tg98.CanFocus = true;
-		this.tg98.Name = "tg98";
-		this.tg98.UseUnderline = true;
-		this.tg98.Label = global::Mono.Unix.Catalog.GetString("98");
-		this.tbLotomania.Add(this.tg98);
-		global::Gtk.Table.TableChild w126 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg98]));
+		this.tg96 = new global::Gtk.ToggleButton ();
+		this.tg96.CanFocus = true;
+		this.tg96.Name = "tg96";
+		this.tg96.UseUnderline = true;
+		this.tg96.Label = global::Mono.Unix.Catalog.GetString ("96");
+		this.tbLotomania.Add (this.tg96);
+		global::Gtk.Table.TableChild w126 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg96]));
 		w126.TopAttach = ((uint)(3));
 		w126.BottomAttach = ((uint)(4));
-		w126.LeftAttach = ((uint)(23));
-		w126.RightAttach = ((uint)(24));
+		w126.LeftAttach = ((uint)(21));
+		w126.RightAttach = ((uint)(22));
 		w126.XOptions = ((global::Gtk.AttachOptions)(4));
 		w126.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tbLotomania.Gtk.Table+TableChild
-		this.tg99 = new global::Gtk.ToggleButton();
+		this.tg97 = new global::Gtk.ToggleButton ();
+		this.tg97.CanFocus = true;
+		this.tg97.Name = "tg97";
+		this.tg97.UseUnderline = true;
+		this.tg97.Label = global::Mono.Unix.Catalog.GetString ("97");
+		this.tbLotomania.Add (this.tg97);
+		global::Gtk.Table.TableChild w127 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg97]));
+		w127.TopAttach = ((uint)(3));
+		w127.BottomAttach = ((uint)(4));
+		w127.LeftAttach = ((uint)(22));
+		w127.RightAttach = ((uint)(23));
+		w127.XOptions = ((global::Gtk.AttachOptions)(4));
+		w127.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child tbLotomania.Gtk.Table+TableChild
+		this.tg98 = new global::Gtk.ToggleButton ();
+		this.tg98.CanFocus = true;
+		this.tg98.Name = "tg98";
+		this.tg98.UseUnderline = true;
+		this.tg98.Label = global::Mono.Unix.Catalog.GetString ("98");
+		this.tbLotomania.Add (this.tg98);
+		global::Gtk.Table.TableChild w128 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg98]));
+		w128.TopAttach = ((uint)(3));
+		w128.BottomAttach = ((uint)(4));
+		w128.LeftAttach = ((uint)(23));
+		w128.RightAttach = ((uint)(24));
+		w128.XOptions = ((global::Gtk.AttachOptions)(4));
+		w128.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child tbLotomania.Gtk.Table+TableChild
+		this.tg99 = new global::Gtk.ToggleButton ();
 		this.tg99.CanFocus = true;
 		this.tg99.Name = "tg99";
 		this.tg99.UseUnderline = true;
-		this.tg99.Label = global::Mono.Unix.Catalog.GetString("99");
-		this.tbLotomania.Add(this.tg99);
-		global::Gtk.Table.TableChild w127 = ((global::Gtk.Table.TableChild)(this.tbLotomania[this.tg99]));
-		w127.TopAttach = ((uint)(3));
-		w127.BottomAttach = ((uint)(4));
-		w127.LeftAttach = ((uint)(24));
-		w127.RightAttach = ((uint)(25));
-		w127.XOptions = ((global::Gtk.AttachOptions)(4));
-		w127.YOptions = ((global::Gtk.AttachOptions)(4));
-		this.hbox5.Add(this.tbLotomania);
-		global::Gtk.Box.BoxChild w128 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.tbLotomania]));
-		w128.Position = 1;
-		w128.Expand = false;
-		w128.Fill = false;
-		this.vbox2.Add(this.hbox5);
-		global::Gtk.Box.BoxChild w129 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbox5]));
-		w129.Position = 5;
-		w129.Expand = false;
-		w129.Fill = false;
-		this.Add(this.vbox2);
-		if ((this.Child != null))
-		{
-			this.Child.ShowAll();
+		this.tg99.Label = global::Mono.Unix.Catalog.GetString ("99");
+		this.tbLotomania.Add (this.tg99);
+		global::Gtk.Table.TableChild w129 = ((global::Gtk.Table.TableChild)(this.tbLotomania [this.tg99]));
+		w129.TopAttach = ((uint)(3));
+		w129.BottomAttach = ((uint)(4));
+		w129.LeftAttach = ((uint)(24));
+		w129.RightAttach = ((uint)(25));
+		w129.XOptions = ((global::Gtk.AttachOptions)(4));
+		w129.YOptions = ((global::Gtk.AttachOptions)(4));
+		this.hbox5.Add (this.tbLotomania);
+		global::Gtk.Box.BoxChild w130 = ((global::Gtk.Box.BoxChild)(this.hbox5 [this.tbLotomania]));
+		w130.Position = 1;
+		w130.Expand = false;
+		w130.Fill = false;
+		this.vbox2.Add (this.hbox5);
+		global::Gtk.Box.BoxChild w131 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox5]));
+		w131.Position = 5;
+		w131.Expand = false;
+		w131.Fill = false;
+		this.Add (this.vbox2);
+		if ((this.Child != null)) {
+			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 731;
+		this.DefaultWidth = 842;
 		this.DefaultHeight = 804;
-		this.Show();
-		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
-		this.DefaultActivated += new global::System.EventHandler(this.OnDefaultActivated);
-		this.cmbJogo.Changed += new global::System.EventHandler(this.OnCmbJogoChanged);
-		this.btnGerar.Clicked += new global::System.EventHandler(this.OnBtnGerarClicked);
-		this.chkVinteUltimosNumeros.Toggled += new global::System.EventHandler(this.OnChkVinteUltimosNumerosToggled);
+		this.Show ();
+		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.DefaultActivated += new global::System.EventHandler (this.OnDefaultActivated);
+		this.cmbJogo.Changed += new global::System.EventHandler (this.OnCmbJogoChanged);
+		this.btnGerar.Clicked += new global::System.EventHandler (this.OnBtnGerarClicked);
+		this.btnGerar80.Clicked += new global::System.EventHandler (this.OnBtnGerar80Clicked);
+		this.chkVinteUltimosNumeros.Toggled += new global::System.EventHandler (this.OnChkVinteUltimosNumerosToggled);
 	}
 }
