@@ -108,13 +108,31 @@ public partial class MainWindow : Gtk.Window
 		}
 	}
 
+	private void PreencherGrupo(int colunaInicial, int quantidadePorGrupo, int indiceJogoGerado, int[] jogoGerado, int[]bolas )
+	{
+		int limite = colunaInicial + quantidadePorGrupo;
+
+		for (var uA = colunaInicial; uA < limite; uA++)
+		{
+			jogoGerado[indiceJogoGerado] = bolas[uA];
+			indiceJogoGerado++;
+		}
+	}
+
+
 	/// <summary>
 	/// Gerars the lotomania80 numeros.
 	/// </summary>
 	/// <param name="jogoAposta">Jogo aposta.</param>
 	/// <param name="jogoQuantidade">A quantidade de jogos.</param>
-	private void GerarLotomania80Numeros(int jogoAposta, int jogoQuantidade)
+	private void GerarLotomania80Numeros(int jogoAposta, int jogoQuantidade, int grupo_de_Bolas)
 	{
+		if (grupo_de_Bolas != 5 && grupo_de_Bolas != 10)
+		{
+			throw new IndexOutOfRangeException("Argumento 'grupo_de_bolas' deve ter o valor 5 ou 10");
+		}
+
+
 		// Uma lista com todas as bolas.
 		List<int> bolasLotomania = new List<int>();
 
@@ -133,10 +151,22 @@ public partial class MainWindow : Gtk.Window
 			66, 70, 80, 94, 96};
 			*/
 
+			/*
 		8, 12, 17, 19, 21,
 		26, 33, 35, 42, 57,
 		62, 66, 73, 83, 85,
 		87, 90, 93, 98, 99
+			*/
+
+			/** 
+			 * Lotomania concurso 1753 (13/4/2017)
+			 * 
+			*/
+			3, 6, 10, 25, 26,
+			33, 40, 43, 45, 49,
+			51, 65, 71, 72, 75,
+			79, 83, 84, 93, 99
+
 		};
 
 
@@ -207,7 +237,8 @@ public partial class MainWindow : Gtk.Window
 				// Adiciona ao arranjo.
 				bolas[qtBolas] = valorSelecionado;
 
-				bolas[qtBolas] = qtBolas;
+				/// O código abaixo é para testar os números sequencialmente.
+				//bolas[qtBolas] = qtBolas;
 
 				qtBolas++;
 
@@ -219,56 +250,84 @@ public partial class MainWindow : Gtk.Window
 			int[] jogoGerado = new int[80];
 			int indiceJogoGerado = 0;
 
-			for (var grupoZero = 0; grupoZero <= 79; grupoZero += 10)
+			for (var grupoZero = 0; grupoZero <= 79; grupoZero += grupo_de_Bolas)
 			{
-				indiceJogoGerado = 0;
-				for (var uA = grupoZero; uA < grupoZero + 10; uA++)
+				indiceJogoGerado = grupo_de_Bolas * 0;
+				PreencherGrupo(grupoZero, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+				for (var grupo1 = grupoZero + grupo_de_Bolas; grupo1 <= 79; grupo1 += grupo_de_Bolas)
 				{
-					jogoGerado[indiceJogoGerado] = bolas[uA];
-					indiceJogoGerado++;
-				}
+					indiceJogoGerado = grupo_de_Bolas * 1;
+					PreencherGrupo(grupo1, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
 
-				for (var grupo1 = grupoZero + 10; grupo1 <= 79; grupo1 += 10)
-				{
-					indiceJogoGerado = 10;
-					for (var uA = grupo1; uA < grupo1 + 10; uA++)
+					for (var grupo2 = grupo1 + grupo_de_Bolas; grupo2 <= 79; grupo2 += grupo_de_Bolas)
 					{
-						jogoGerado[indiceJogoGerado] = bolas[uA]; ;
-						indiceJogoGerado++;
-					}
+						indiceJogoGerado = grupo_de_Bolas * 2;
+						PreencherGrupo(grupo2, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
 
-					for (var grupo2 = grupo1 + 10; grupo2 <= 79; grupo2 += 10)
-					{
-						indiceJogoGerado = 20;
-						for (var uA = grupo2; uA < grupo2 + 10; uA++)
+						for (var grupo3 = grupo2 + grupo_de_Bolas; grupo3 <= 79; grupo3 += grupo_de_Bolas)
 						{
-							jogoGerado[indiceJogoGerado] = bolas[uA]; ;
-							indiceJogoGerado++;
-						}
+							indiceJogoGerado = grupo_de_Bolas * 3;
+							PreencherGrupo(grupo3, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
 
-						for (var grupo3 = grupo2 + 10; grupo3 <= 79; grupo3 += 10)
-						{
-							indiceJogoGerado = 30;
-							for (var uA = grupo3; uA < grupo3 + 10; uA++)
+							for (var grupo4 = grupo3 + grupo_de_Bolas; grupo4 <= 79; grupo4 += grupo_de_Bolas)
 							{
-								jogoGerado[indiceJogoGerado] = bolas[uA];
-								indiceJogoGerado++;
-							}
+								indiceJogoGerado = grupo_de_Bolas * 4;
+								PreencherGrupo(grupo4, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
 
-							for (var grupo4 = grupo3 + 10; grupo4 <= 79; grupo4 += 10)
-							{
-								indiceJogoGerado = 40;
-								for (var uA = grupo4; uA < grupo4 + 10; uA++)
+								//indiceJogoGerado = 40;
+								//for (var uA = grupo4; uA < grupo4 + 10; uA++)
+								//{
+								//	jogoGerado[indiceJogoGerado] = bolas[uA];
+								//	indiceJogoGerado++;
+								//}
+								if (grupo_de_Bolas == 5)
 								{
-									jogoGerado[indiceJogoGerado] = bolas[uA];
-									indiceJogoGerado++;
+									for (var grupo5 = grupo4 + grupo_de_Bolas; grupo5 <= 79; grupo5 += grupo_de_Bolas)
+									{
+										indiceJogoGerado = grupo_de_Bolas * 5;
+										PreencherGrupo(grupo5, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+										for (var grupo6 = grupo5 + grupo_de_Bolas; grupo6 <= 79; grupo6 += grupo_de_Bolas)
+										{
+											indiceJogoGerado = grupo_de_Bolas * 6;
+											PreencherGrupo(grupo6, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+											for (var grupo7 = grupo6 + grupo_de_Bolas; grupo7 <= 79; grupo7 += grupo_de_Bolas)
+											{
+												indiceJogoGerado = grupo_de_Bolas * 7;
+												PreencherGrupo(grupo7, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+												for (var grupo8 = grupo7 + grupo_de_Bolas; grupo8 <= 79; grupo8 += grupo_de_Bolas)
+												{
+													indiceJogoGerado = grupo_de_Bolas * 8;
+													PreencherGrupo(grupo8, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+													for (var grupo9 = grupo8 + grupo_de_Bolas; grupo9 <= 79; grupo9 += grupo_de_Bolas)
+													{
+														indiceJogoGerado = grupo_de_Bolas * 9;
+														PreencherGrupo(grupo9, grupo_de_Bolas, indiceJogoGerado, jogoGerado, bolas);
+
+														// Aqui, quer dizer, que todos os 80 números foram inseridos, devemos copiar
+														// em um novo arranjo e adicionar à lista.
+														int[] novoJogo = new int[80];
+														novoJogo = (int[])jogoGerado.Clone();
+														listaJogos.Add(novoJogo);
+													}
+												}
+											}
+										}
+									}
 								}
+								else
+								{
+									// Aqui, quer dizer, que todos os 80 números foram inseridos, devemos copiar
+									// em um novo arranjo e adicionar à lista.
+									int[] novoJogo = new int[80];
+									novoJogo = (int[])jogoGerado.Clone();
 
-								// Adicionar à lista.
-								int[] novoJogo = new int[80];
-								novoJogo = (int[])jogoGerado.Clone();
-
-								listaJogos.Add(novoJogo);
+									listaJogos.Add(novoJogo);
+								}
 
 							}
 						}
@@ -290,6 +349,9 @@ public partial class MainWindow : Gtk.Window
 		int contadorJogo = 0;
 		foreach (int[] bolas_da_lista in listaJogos)
 		{
+			// No arranjo de 100 números, o número de cada índice, correspondente
+			// a um dos 50 números, então, se o número foi sorteado, o conteúdo
+			// deste índice do arranjo terá o valor 1.
 			for (var uA = 0; uA <= 49; uA++)
 			{
 				jogoResultado[contadorJogo, bolas_da_lista[uA]] = 1;
@@ -471,6 +533,10 @@ public partial class MainWindow : Gtk.Window
 
 			int indiceBolaSelecionada = 2;
 			int indiceBolaNaoSelecionada = 2;
+
+			// Vamos concatenar as bolas, pra poder identificar depois se há bolas repetidas.
+			StringBuilder strConcatenadaSelecionada = new StringBuilder();
+			StringBuilder strConcatenadaNaoSelecionada = new StringBuilder();
 
 			for (var uB = 0; uB <= 99; uB++)
 			{
@@ -853,7 +919,36 @@ public partial class MainWindow : Gtk.Window
 		}
 
 		if (jogoSelecionado == "LOTOMANIA") {
-			GerarLotomania80Numeros (50, jogoQuantidade);
+			GerarLotomania80Numeros (50, jogoQuantidade, 10);
+		}
+	}
+
+	protected void OnBtnGerarGrupo5Clicked(object sender, EventArgs e)
+	{
+		string jogoSelecionado = cmbJogo.ActiveText;
+
+		// Vamos validar os dados.
+		if (!lista_de_jogos.ContainsKey(jogoSelecionado))
+			return;
+
+		int jogoAposta = int.Parse(cmbJogoAposta.ActiveText);
+		if (!lista_de_jogos[jogoSelecionado].Contains(jogoAposta.ToString()))
+			return;
+
+		int jogoQuantidade = int.Parse(cmbJogoQuantidade.ActiveText);
+		if (Math.Sign(jogoQuantidade) == -1)
+		{
+			jogoQuantidade = Math.Abs(jogoQuantidade);
+		}
+
+		if (jogoQuantidade == 0)
+		{
+			jogoQuantidade = 1;
+		}
+
+		if (jogoSelecionado == "LOTOMANIA")
+		{
+			GerarLotomania80Numeros(50, jogoQuantidade, 5);
 		}
 	}
 }
